@@ -1,16 +1,16 @@
 default:                                                      # Fallback if nothing is specified
-  initial:      jdecent                                       # used for author lookup in posts and for first two characters in the about page back button
-  name:         "Jekyll Decent"                               # used to display author name
-  cover:        /assets/mountain-alternative-cover.jpg        # OPTIONAL: defines location of cover image in about page
-  picture:      /assets/johndoe.jpg                           # OPTIONAL: author picture
+  initial:      Chang                                      # used for author lookup in posts and for first two characters in the about page back button
+  name:         "Chang Liu"                               # used to display author name
+  cover:        /assets/Xinglong.jpg        # OPTIONAL: defines location of cover image in about page
+  picture:      /assets/Chang.jpg                           # OPTIONAL: author picture
   bio:          This is my bio!                               # OPTIONAL: text below author name in posts
-  location:     Germany                                       # OPTIONAL: used to display location of the author
+  location:     China                                       # OPTIONAL: used to display location of the author
   website:                          						  # OPTIONAL: link to the author of a post
-  email:                                                      # OPTIONAL: used in the about page
+  email:        1600012139@pku.edu.cn                         # OPTIONAL: used in the about page
   twitter:                                                    # OPTIONAL: used in the about page
   linkedin:                                                   # OPTIONAL: used in the about page
   xing:                                                       # OPTIONAL: used in the about page
-  github:                                                     # OPTIONAL: used in the about page
+  github:       slowdivePTG                                   # OPTIONAL: used in the about page
   stackoverflow:                                              # OPTIONAL: used in the about page
   facebook:                                                   # OPTIONAL: used in the about page
   gplus:                                                      # OPTIONAL: used in the about page
@@ -24,21 +24,21 @@ default:                                                      # Fallback if noth
   s500px:                                                     # OPTIONAL: used in the about page
   reddit:                                                     # OPTIONAL: used in the about page
 jdecent:
-  initial:      jdecent
-  name:         "Jekyll Decent"       
-  cover:        /assets/mountain-alternative-cover.jpg  
-  picture:      /assets/johndoe.jpg  
+  initial:      Chang
+  name:         "Chang Liu"
+  cover:        /assets/Xinglong.jpg
+  picture:      /assets/Chang.jpg
   bio:          This is my bio!
-  location:     Germany
-  email:        "-"   
-  twitter:      "-"    
+  location:     Chang
+  email:        "-"
+  twitter:      "-"
   twitch:       "-"
 jwillmer:
-  initial:      jwillmer
-  name:         "Jens Willmer"        
-  picture:      /assets/jwillmer.jpg  
-  bio:          All about technology 
-  location:     Germany 
-  website:      "http://jwillmer.de/cv" 
-  twitter:      jenswillmer
-  github:       jwillmer
+  initial:      Chang
+  name:         "Chang Liu"
+  picture:      /assets/Chang.jpg
+  bio:          All about technology
+  location:     China
+  website:      "-"
+  twitter:
+  github:       slowdivePTG

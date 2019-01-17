@@ -1,6 +1,6 @@
 default:                                                      # Fallback if nothing is specified
-  initial:      Chang                                      # used for author lookup in posts and for first two characters in the about page back button
-  name:         "Chang Liu"                               # used to display author name
+  initial:      JekyllDecent                                      # used for author lookup in posts and for first two characters in the about page back button
+  name:         "JekyllDecent"                               # used to display author name
   cover:        /assets/Xinglong.jpg        # OPTIONAL: defines location of cover image in about page
   picture:      /assets/Chang.jpg                           # OPTIONAL: author picture
   bio:          This is my bio!                               # OPTIONAL: text below author name in posts
@@ -24,8 +24,8 @@ default:                                                      # Fallback if noth
   s500px:                                                     # OPTIONAL: used in the about page
   reddit:                                                     # OPTIONAL: used in the about page
 jdecent:
-  initial:      Chang
-  name:         "Chang Liu"
+  initial:      JekyllDecent
+  name:         "JekyllDecent"
   cover:        /assets/Xinglong.jpg
   picture:      /assets/Chang.jpg
   bio:          This is my bio!
@@ -34,8 +34,8 @@ jdecent:
   twitter:      "-"
   twitch:       "-"
 jwillmer:
-  initial:      Chang
-  name:         "Chang Liu"
+  initial:      JekyllDecent
+  name:         "JekyllDecent"
   picture:      /assets/Chang.jpg
   bio:          All about technology
   location:     China

@@ -1,7 +1,6 @@
 jdecent:
     profile: "I'm currently an undergraduate in Department of Astronomy, Peking University"
     skills:
-        - "Python, C++"
         - "A little bit Physics & Astronomy"
     education:
         - time:             "2016.9 - "

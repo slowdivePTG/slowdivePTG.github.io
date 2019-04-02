@@ -1,6 +1,6 @@
 default:                                                      # Fallback if nothing is specified
-  initial:      JekyllDecent                                      # used for author lookup in posts and for first two characters in the about page back button
-  name:         "JekyllDecent"                               # used to display author name
+  initial:      Chang                                      # used for author lookup in posts and for first two characters in the about page back button
+  name:         "Chang"                               # used to display author name
   cover:        /assets/Xinglong.jpg        # OPTIONAL: defines location of cover image in about page
   picture:      /assets/Chang.jpg                           # OPTIONAL: author picture
   bio:          This is my bio!                               # OPTIONAL: text below author name in posts
@@ -23,22 +23,12 @@ default:                                                      # Fallback if noth
   twitch:                                                     # OPTIONAL: used in the about page
   s500px:                                                     # OPTIONAL: used in the about page
   reddit:                                                     # OPTIONAL: used in the about page
-jdecent:
-  initial:      JekyllDecent
-  name:         "JekyllDecent"
+chang:
+  initial:      Chang
+  name:         "Chang"
   cover:        /assets/Xinglong.jpg
   picture:      /assets/Chang.jpg
   bio:          This is my bio!
-  location:     Chang
-  email:        "-"
-  twitter:      "-"
-  twitch:       "-"
-jwillmer:
-  initial:      JekyllDecent
-  name:         "JekyllDecent"
-  picture:      /assets/Chang.jpg
-  bio:          All about technology
   location:     China
-  website:      "-"
-  twitter:
+  email:        "1600012139@pku.edu.cn"
   github:       slowdivePTG

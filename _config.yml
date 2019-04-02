@@ -8,7 +8,7 @@
 # Site settings
 title:            Chang Liu
 subtitle:         Department of Astronomy, Peking University
-description:      Welcome to Chang's homepage! It is based on Jekyll and released on GitHub Pages.
+description:      Welcome to Chang's homepage!
 keywords:         demo theme example github jekyll features
 language:         "en" # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
 
@@ -16,7 +16,7 @@ baseurl:          "/" # the subpath of your site, e.g. /blog
 url:              "https://slowdivePTG.github.io" # the base hostname & protocol for your site. Have a look at robots.txt as well!
 permalink:        /blog/:categories/:title
 cover:            /assets/mountain-cover.jpg
-disqus_shortname: "jekylldecent"
+disqus_shortname: "slowdivePTG"
 
 # Build settings
 sass:

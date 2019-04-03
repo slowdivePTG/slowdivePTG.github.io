@@ -8,13 +8,13 @@
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
+<loc>http://localhost:4000/About</loc>
+</url>
+<url>
 <loc>http://localhost:4000/cv</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/offline-warning/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/offline</loc>

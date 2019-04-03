@@ -1,7 +1,7 @@
 default:                                                      # Fallback if nothing is specified
   initial:      Chang                                      # used for author lookup in posts and for first two characters in the about page back button
   name:         "Chang"                               # used to display author name
-  cover:        /assets/Xinglong.jpg        # OPTIONAL: defines location of cover image in about page
+  cover:        /assets/Sunset.jpg        # OPTIONAL: defines location of cover image in about page
   picture:      /assets/Chang.jpg                           # OPTIONAL: author picture
   bio:          This is my bio!                               # OPTIONAL: text below author name in posts
   location:     China                                       # OPTIONAL: used to display location of the author
@@ -26,7 +26,7 @@ default:                                                      # Fallback if noth
 chang:
   initial:      Chang
   name:         "Chang"
-  cover:        /assets/Xinglong.jpg
+  cover:        /assets/Sunset.jpg
   picture:      /assets/Chang.jpg
   bio:          This is my bio!
   location:     China

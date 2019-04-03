@@ -3,7 +3,10 @@ chang:
     skills:
         - "A little bit Physics & Astronomy"
     education:
-        - time:             "2016.9 - "
+        - time:             "2016.9 - 2017.6"
+          location:         "Peking University"
+          description:      "Biology"
+        - time:             "2017.9 - "
           location:         "Peking University"
           description:      "Astronomy"
     projects:

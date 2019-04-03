@@ -3,6 +3,6 @@ layout:    page
 permalink: "/Research"
 author:    Chang
 weight:    5
-menutitle: Researches
+menutitle: Research
 title:     My Research Interests
 ---

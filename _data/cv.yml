@@ -1,5 +1,5 @@
 chang:
-    profile: "I'm currently an undergraduate in Department of Astronomy, Peking University"
+    profile: "I'm currently an undergraduate in Department of Astronomy, Peking University. At present I work on my Undergraduate Research & Training Program and focus on the chemical impacts of a hypothetical AGN on the molecular clouds around the galactic center. I'm also interested in blackholes and gravitational wave."
     skills:
         - "A little bit Physics & Astronomy"
     education:
@@ -14,5 +14,5 @@ chang:
           title:            "Undergraduate Research & Training Program"
           technologies:     "Fortran, Python, X-ray chemistry"
           description:
-            - The impact of X-ray produced by the supermassive blackhole in the galactic center
+            -
             - Simulation of the chemical evolution of molecular clouds

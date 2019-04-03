@@ -10,7 +10,7 @@ chang:
           location:         "Peking University"
           description:      "Astronomy"
     projects:
-        - time:             "2017.7 - "
+        - time:             "2018.7 - "
           title:            "Undergraduate Research & Training Program"
           technologies:     "Fortran, Python, X-ray chemistry"
           description:

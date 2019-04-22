@@ -8,6 +8,9 @@
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
+<loc>http://localhost:4000/Notes</loc>
+</url>
+<url>
 <loc>http://localhost:4000/Research</loc>
 </url>
 <url>
@@ -18,5 +21,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/offline</loc>
+</url>
+<url>
+<loc>http://localhost:4000/cv/resume_cv.pdf</loc>
+<lastmod>2019-04-22T14:30:56+08:00</lastmod>
 </url>
 </urlset>

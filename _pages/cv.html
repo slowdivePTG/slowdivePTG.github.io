@@ -12,6 +12,7 @@ excerpt:   This page contains the curriculum vitae (CV) of Chang Liu.
 
 <div class="md-card no-border">
     <p>{{cv.profile}}</p>
+    <p style = "text-align:center;"><b><i>For more details, see my <a href = '/cv/resume_cv.pdf'>CV</a> in PDF format</b></i></p>
 </div>
 
 <div class="md-card shadow">
@@ -57,6 +58,14 @@ excerpt:   This page contains the curriculum vitae (CV) of Chang Liu.
         <ul>
             {% for responsibility in project.responsibilities %}
             <li>{{responsibility}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="content">
+        <ul>
+            {% assign descriptions = project.discriptions | split: ',' %}
+            {% for description in project.descriptions %}
+            <li> {{ description }}</li>
             {% endfor %}
         </ul>
     </div>

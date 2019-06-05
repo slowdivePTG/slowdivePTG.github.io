@@ -6,7 +6,7 @@ default:                                                      # Fallback if noth
   bio:          This is my bio!                               # OPTIONAL: text below author name in posts
   location:     China                                       # OPTIONAL: used to display location of the author
   website:                          						  # OPTIONAL: link to the author of a post
-  email:        1600012139@pku.edu.cn                         # OPTIONAL: used in the about page
+  email:        ptg.cliu@pku.edu.cn                         # OPTIONAL: used in the about page
   twitter:                                                    # OPTIONAL: used in the about page
   linkedin:                                                   # OPTIONAL: used in the about page
   xing:                                                       # OPTIONAL: used in the about page

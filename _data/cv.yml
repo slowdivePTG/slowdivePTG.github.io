@@ -13,7 +13,7 @@ chang:
           description:      "Astronomy"
     projects:
         - time:             "2018.7 - "
-          title:            "Undergraduate Research & Training Program"
+          title:            "Undergraduate Research & Training Program - National Innovation Training Program"
           technologies:     "Fortran, Python, Chemistry, Molecular Clouds"
           descriptions:
             - AGN induced chemistry in molecular clouds

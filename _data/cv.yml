@@ -18,3 +18,10 @@ chang:
           descriptions:
             - AGN induced chemistry in molecular clouds
             - Chemical evolution of complex biotic organic molecules
+        - time:             "2019.7 - 2019.8"
+          title:            "Summer Undergraduate Research Fellowship (SURF)"
+          technologies:     "Zwicky Transient Facility (ZTF), Gaia, Periodic White Dwarfs"
+          descriptions:
+            - Cross-match between Gaia DR2 and ZTF
+            - Systematic study on white dwarf candidates with short periods (1-2 hr)
+            - Classification for interesting variables

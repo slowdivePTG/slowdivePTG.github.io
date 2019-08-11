@@ -2,10 +2,14 @@
 layout: default
 ---
 
+<div class="md-card no-border">
+    <p>{{"I'm currently an undergraduate in Department of Astronomy, Peking University. At present I work on my Undergraduate Research & Training Program and focus on the chemical impacts of a hypothetical AGN on the molecular clouds around the galactic center. I'm also interested in black holes and gravitational wave."}}</p>
+    <p style = "text-align:center;"><b><i>For more details, see my <a href = '/cv/resume_cv.pdf'>CV</a> in PDF format</b></i></p>
+</div>
 
 <div id="content" class="content">
     <h3>Recent Posts</h3>
-    <ul class="category recent-posts">       
+    <ul class="category recent-posts">
         {% for post in site.posts limit:5  %}
         {% unless post.draft %}
 
@@ -34,7 +38,7 @@ layout: default
     {% for category in sorted_cats %}
     {% assign sorted_posts = category[1] | reversed %}
     <h3 id="{{category[0] | uri_escape | downcase | slugify }}">{{category[0] | camelcase }}</h3>
-    <ul class="category {{category[0] | uri_escape | downcase | slugify}}">  
+    <ul class="category {{category[0] | uri_escape | downcase | slugify}}">
         {% for post in sorted_posts %}
         {% unless post.draft %}
 

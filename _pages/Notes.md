@@ -4,10 +4,10 @@ permalink: "/Notes"
 author:    Chang
 weight:    5
 menutitle: Notes
-title:     Notes of several courses
+title:     Notes on several courses
 ---
 
-- Here are notes of several Mathematics & Astronomy undergraduate courses in Peking University. Hope these may help you :)
+- Here are notes on several Mathematics & Astronomy undergraduate courses in Peking University. Hope these may help you :)
 
   [Notes](https://github.com/slowdivePTG/Notes)
 

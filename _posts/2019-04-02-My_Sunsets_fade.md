@@ -4,7 +4,7 @@ title:             "My Sunsets Fade"
 menutitle:         "My Sunsets Fade"
 category:          Writings
 author:            Chang
-tags:              Whispering
+tags:              Music
 ---
 
 ## Chapter 1 - The First Autumn

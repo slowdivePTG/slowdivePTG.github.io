@@ -5,8 +5,19 @@
         "title": "My Sunsets Fade",
         "category": "Writings",
         "url": "http://localhost:4000/blog/writings/My_Sunsets_fade",
-        "tags": ["Whispering"],
+        "tags": ["Music"],
         "date": "2019-04-02 00:00:00 -0700",
+        "language": "en"
+    },
+  
+
+  
+    {
+        "title": "The wind farther than the farthest",
+        "category": "Writings",
+        "url": "http://localhost:4000/blog/writings/Features",
+        "tags": ["Travel"],
+        "date": "2018-07-12 00:00:00 -0700",
         "language": "en"
     }
   

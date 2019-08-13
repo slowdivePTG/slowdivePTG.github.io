@@ -1,6 +1,6 @@
 ---
 layout:            post
-title:             "The wind farther than the farthest"
+title:             "The Wind Farther Than The Farthest"
 date:              2018-07-12
 tags:              Travel
 category:          Writings

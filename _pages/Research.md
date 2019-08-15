@@ -2,7 +2,7 @@
 layout:    page
 permalink: "/Research"
 author:    Chang
-weight:    5
+weight:    1
 menutitle: Research
 title:     My Researches
 ---

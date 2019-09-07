@@ -52,7 +52,7 @@
         position: relative;
         margin-bottom: 25px;
 
-        
+
         p {
             margin: 0; /* jekyll generates paragraphs in figure elements */
         }
@@ -60,7 +60,7 @@
 
         &.left, &.right, &.large {
             margin-bottom:0;
-            
+
             figcaption {
                 position: static;
                 width: auto;

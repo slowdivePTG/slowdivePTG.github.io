@@ -6,7 +6,7 @@
         "category": "Writings",
         "url": "http://localhost:4000/blog/writings/My_Sunsets_fade",
         "tags": ["Music"],
-        "date": "2019-01-01 00:00:00 -0800",
+        "date": "2019-01-01 00:00:00 +0800",
         "language": "en"
     },
   
@@ -17,7 +17,7 @@
         "category": "Writings",
         "url": "http://localhost:4000/blog/writings/The_Wind_Farther_Than_The_Farthest",
         "tags": ["Travel"],
-        "date": "2018-07-12 00:00:00 -0700",
+        "date": "2018-07-12 00:00:00 +0800",
         "language": "en"
     }
   

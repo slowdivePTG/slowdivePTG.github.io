@@ -1,5 +1,29 @@
-/* some data is duplicated from other files to allow an easy merge of updates 
+/* some data is duplicated from other files to allow an easy merge of updates
    from the forked theme without destroying the css for this page */
+
+
+.Intro {
+  float:left;
+  padding:0 10%;
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+.main-left{
+  padding-left: 0%;
+  width:40%;
+  padding-right: 10%;
+  float:left;
+}
+
+.main-right{
+  line-height: 40px;
+  padding-top: 8%;
+  padding-right: 10%;
+  width:40%;
+  float:right;
+  font-size: 1.7rem;
+}
 
 .category {
     width: 90%;

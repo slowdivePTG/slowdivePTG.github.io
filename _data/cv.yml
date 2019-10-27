@@ -13,15 +13,21 @@ chang:
           description:      "Astronomy"
     projects:
         - time:             "2018.7 - "
-          title:            "Undergraduate Research & Training Program"
+          title:            "Impact of an Active Sgr A* on the Biogenic and Organic Molecules Throughout the Milky Way"
           technologies:     "Fortran, Python, Chemistry, Molecular Clouds"
           descriptions:
+            - Undergraduate Research & Training Program, Department of Astronomy, Peking University
             - AGN induced chemistry in molecular clouds
             - Chemical evolution of complex biotic organic molecules
-        - time:             "2019.7 - 2019.8"
-          title:            "Summer Undergraduate Research Fellowship (SURF)"
+        - time:             "2019.6 - 2019.8"
+          title:            "A Systematic Search For Periodic White Dwarfs Using ZTF Data"
           technologies:     "Zwicky Transient Facility (ZTF), Gaia, Periodic White Dwarfs"
           descriptions:
-            - Cross-match between Gaia DR2 and ZTF
-            - Systematic study on white dwarf candidates with short periods (1-2 hr)
-            - Classification for interesting variables
+            - Summer Undergraduate Research Fellowship (SURF), Astronomy Department, Caltech
+            - Systematic study on white dwarf candidates with short periods (1-3 hr)
+            - Classification for interesting variables (eclipsing systems, reflection systems, CVs, etc.)
+        - time:             "2019.10 - "
+          title:            "The Hydrodynamics of Binary Mass Transfer in Compact Binaries"
+          technologies:     "Compact Binary, Mass Transfer, Hydrodynamic Simulation"
+          descriptions:
+            - Department of Astronomy and Astrophysics, UC Santa Cruz

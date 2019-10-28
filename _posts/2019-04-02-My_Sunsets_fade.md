@@ -5,7 +5,7 @@ title:             "My Sunsets Fade"
 menutitle:         "My Sunsets Fade"
 category:          Writings
 author:            Chang
-tags:              Music
+tags:              When The Music Is Over
 ---
 
 ## Chapter 1 - The First Autumn

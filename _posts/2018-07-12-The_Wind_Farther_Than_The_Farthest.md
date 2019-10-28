@@ -3,7 +3,7 @@ layout:            post
 title:             "The Wind Farther Than The Farthest"
 date:              2018-07-12
 tags:              On The Road
-category:          Writings
+category:          On The Road
 author:            Chang
 math:              true
 ---

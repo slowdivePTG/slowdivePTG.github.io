@@ -3,9 +3,9 @@ layout:            post
 date:              2019-01-01
 title:             "My Sunsets Fade"
 menutitle:         "My Sunsets Fade"
-category:          Writings
 author:            Chang
 tags:              When The Music Is Over
+category:          When The Music Is Over
 ---
 
 ## Chapter 1 - The First Autumn

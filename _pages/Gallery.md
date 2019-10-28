@@ -2,7 +2,7 @@
 layout:    page
 permalink: "/Gallery"
 author:    Chang
-weight:    6
+weight:    5
 menutitle: Gallery
 title:     Photography & Writings
 ---

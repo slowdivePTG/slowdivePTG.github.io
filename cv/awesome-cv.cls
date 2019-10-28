@@ -201,10 +201,11 @@
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{8.5pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\mentorstyle}[1]{{\fontsize{9pt}{1em}\bfseries\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -303,6 +304,7 @@
 % Usage: \linkedin{<linked-in-nick>}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
 
+% Defines writer's twitter (optional)
 % Usage: \twitter{<twitter handle>}
 \newcommand*{\twitter}[1]{\def\@twitter{#1}}
 
@@ -318,7 +320,10 @@
 % Usage: \xing{<xing name>}
 \newcommand*{\xing}[1]{\def\@xing{#1}}
 
-% Defines writer's twitter (optional)
+% Defines writer's ORCID (optional)
+% Usage: \ORCID{<ORCID>}
+\newcommand*{\ORCID}[1]{\def\@ORCID{#1}}
+
 % Defines writer's extra informations (optional)
 % Usage: \extrainfo{<extra informations>}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
@@ -502,6 +507,12 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://www.xing.com/profile/\@xing}{\faXingSquare\acvHeaderIconSep\@xing}
         }%
+      \ifthenelse{\isundefined{\@ORCID}}%
+    	{}%
+    	{%
+    		\ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+    		\href{\@ORCID}{\faORCID\acvHeaderIconSep\@ORCID}%
+    	}%
       \ifthenelse{\isundefined{\@extrainfo}}%
         {}%
         {%
@@ -599,6 +610,29 @@
       {}
       {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
+}
+
+% Define an environment for cvexperience
+\newenvironment{cvexperiences}{%
+	\vspace{\acvSectionContentTopSkip}
+	\begin{center}
+	}{%
+	\end{center}
+}
+% Define an entry of cv information
+% Usage: \cvexperience{<position>}{<title>}{<location>}{<date>}{<description>}
+\newcommand*{\cvexperience}[6]{%
+	\vspace{-2.0mm}
+	\setlength\tabcolsep{0pt}
+	\setlength{\extrarowheight}{0pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+		\ifempty{#2#3}
+		{\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+		{\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+			\entrypositionstyle{#1} & \entrydatestyle{#4} \\
+			\mentorstyle{#5} &  \\}
+		\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}
+	\end{tabular*}%
 }
 
 % Define an environment for cvhonor

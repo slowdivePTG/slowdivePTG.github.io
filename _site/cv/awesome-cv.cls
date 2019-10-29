@@ -619,7 +619,7 @@
 	}{%
 	\end{center}
 }
-% Define an entry of cv information
+% Define an entry of cv information (experience)
 % Usage: \cvexperience{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cvexperience}[6]{%
 	\vspace{-2.0mm}
@@ -635,7 +635,28 @@
 	\end{tabular*}%
 }
 
-% Define an environment for cvhonor
+% Define an environment for cvreferences
+\newenvironment{cvreferences}{%
+	\vspace{\acvSectionContentTopSkip}
+	\begin{center}
+	}{%
+	\end{center}
+}
+% Define an entry of cv information
+% Usage: \cvreference{<position>}{<title>}{<location>}{<date>}{<description>}
+\newcommand*{\cvreference}[4]{%
+	\vspace{-2.0mm}
+	\setlength\tabcolsep{0pt}
+	\setlength{\extrarowheight}{0pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 9cm} R{9cm}}
+		\ifempty{#2#3}
+		{\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+		{\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+			\entrypositionstyle{#1} & \entrydatestyle{#4}}
+	\end{tabular*}%
+}
+
+% Define an environment for cv references
 \newenvironment{cvhonors}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2mm}

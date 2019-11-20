@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awesome Cover Letter
+% XeLaTeX Template
+% Version 1.1 (9/1/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original authors:
+% Claud D. Park (posquit0.bj@gmail.com)
+% Lars Richter (mail@ayeks.de)
+% With modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template must be compiled with XeLaTeX, the below lines will ensure this
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+ 
+\fontdir[fonts/] % Specify the location of the included fonts
+
+% Color for highlights
+\colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+%\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
+
+% Colors for text - uncomment and modify
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%----------------------------------------------------------------------------------------
+
+\name{Statement of Purpose:}{OSU}
+\address{CHANG LIU\\Department of Astronomy, Peking University}
+
+\email{ptg.cliu@pku.edu.cn}
+\homepage{https://slowdiveptg.github.io}
+\github{slowdivePTG}
+%\skype{skypeid}
+%\stackoverflow{SOid}{SOname}
+%\twitter{@twit}
+%\linkedin{linkedin name}
+%\reddit{reddit account}
+%\xing{xing name}
+%\ORCID{https://orcid.org/0000-0002-7866-4531} % Other text you want to include on this line
+
+%\position{Undergraduate Student in Astrophysics} % Your expertise/fields
+%\quote{``Explore the universe, benefit the society."} % A quote or statement
+
+\makecvfooter{\today}{Chang Liu~~~·~~~State of Purpose}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+%----------------------------------------------------------------------------------------
+%	RECIPIENT/POSITION/LETTER INFORMATION
+%	All of the below lines must be filled out
+%----------------------------------------------------------------------------------------
+
+\recipient{Company Recruitment Team}{Initech Inc.\\4120 Freidrich Ln.\\Austin, TX 78744} % The company being applied to
+
+\letterdate{\today} % The date on the letter, default is the date of compilation
+
+\lettertitle{Job Application for Middle Manager} % The title of the letter
+
+\letteropening{Dear Mr./Ms./Dr. LastName,} % How the letter is opened
+
+\letterclosing{Sincerely,} % How the letter is closed
+
+\letterenclosure[Attached]{Curriculum Vitae} % Any enclosures with the letter
+
+\makecvfooter{\today}{Chang Liu~~~·~~~Statement of Purpose: OSU}{} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+  
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvheader % Print the header
+
+%\makelettertitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\begin{cvletter}
+
+%------------------------------------------------
+
+\lettersection{About Me}
+As an undergrad in astrophysics major, I have a strong urge of pursuing a PhD degree and continuing my adventure on mysteries outside our tiny planet. I have developed a wide interest in all kinds of high energy astrophysical events. Astrochemistry \& astrobiology within interstellar medium is also a brand new field I would love to explore. Combining the state-of-the-art observation with the most powerful computational methods to understand complex astrophysical environment is a sweet temptation, and one of my greatest pursuits.
+
+Though having been fascinated by astrophysics for long, the strong faith of being an astronomer, I believe, dates back in my freshman year in biology major, a quite popular subject today. Though I got highest GPA (3.87/4) among 120 freshmen in biology, I was finally tired of cumbersome taxonomy and test-tube-washing. Fortunate enough, after taking several fundamental courses on physics \& astronomy, I realized that for me, the subtle balance of astonishing physical pictures and beautiful mathematical structures is so well attained in astrophysics. Since my sophomore year, I have kept in the first place in GPA (3.83/4) among 28 students in astronomy. More advanced astrophysics courses (spectroscopy, general relativity, gravitational-wave astrophysics and so on) have equipped me for conducting researches.
+
+%------------------------------------------------
+
+\lettersection{Research Experience}
+
+My first scientific project started at the end of my second year, under the supervision of Prof. Xian Chen in Kavli Institute for Astronomy and Astrophysics in Peking University and Prof. Fujun Du in Purple Mountain Observatory, Chinese Academy of Sciences. Starting from a crazy implication of recent observations that the supermassive black hole in the Milky Way was active 2-8 Myr ago, I have been using numerical methods to work as an 'archaeologist' digging out the biochemical history of our galaxy under the framework of an ancient AGN event. During such an event, tremendous hard X-ray radiation should be able to efficiently penetrate the dusty galactic disk and lead to the synthesis of complex species related to the origin of life. To run the long term astrochemical simulation, I built our chemical network based on a classic gas-phase model (osu\_01\_2007) developed by OSU's astrophysical chemistry group. For self-consistency, I included necessary surface processes important for molecule formation. Under a detailed AGN and galactic absorption model, X-ray ionization processes at various distances from the galactic center were then carefully embedded in the network. The simulation was finally executed with KROME package, a widely used astrophysical simulation method with chemistry included. We are extremely excited to see that several typical prebiotic species show observable changes in abundance distribution in galactic disk given former AGN events. Our paper is under final revision and will be submitted to ApJ soon. 
+
+Another topic that I am interested in is various high energy events. In the summer of 2019, I went to Caltech as part of the Summer Undergraduate Research Fellowship (SURF) program, and touched the field of transients for the first time under the mentorship of Prof. Shrinivas Kulkarni. With light curves from Zwicky Transient Facility (ZTF), a state-of-the-art optical time-domain survey with extraordinary field of view and survey efficiency, I conducted a systematic search for periodic white dwarf binaries. Starting with the a population of 486,641 WD candidates identified in ESA's Gaia mission, I performed a cross match between the so-far most complete catalog and ZTF data to select a subset of ~90000 sources with over 100 observations in ZTF. My carefully designed periodogram based on Lomb-Scargle method was then applied to the extracted light curves. A sample of 81 periodic white dwarfs (WDs) with periods between 1 and 3 hr to our surprise stood out. With combined analysis of both shapes of light curves and color information from Gaia and PanSTARRS, I classified several sources of interest including a contact binary candidate with possibly the shortest period known and an usual strongly ellipsoidal-modulated double white dwarfs system with an extremely low-mass (ELM) component. A catalog of the 81 sources with our primary classification has been made and our paper will be updated with continuing follow-ups before submission to ApJ.
+%------------------------------------------------
+
+\lettersection{Why OSU?}
+
+
+%------------------------------------------------
+
+\end{cvletter}
+
+%----------------------------------------------------------------------------------------
+
+%\makeletterclosing % Print the signature and enclosures
+
+\end{document}

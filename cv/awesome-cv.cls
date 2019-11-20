@@ -721,7 +721,7 @@
   \par\addvspace{2.5ex}
   \phantomsection{}
   \lettersectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
+  \color{black}\vhrulefill{0.9pt}
   \par\nobreak\addvspace{0.4ex}
 }
 

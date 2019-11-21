@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.31)  20 NOV 2019 12:20
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.31)  21 NOV 2019 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1239,30 +1239,32 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 14.0pt on input line 105.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/bx/n' will be
 (Font)              scaled to size 14.0pt on input line 105.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 117.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 14.0pt on input line 119.
+(Font)              scaled to size 10.0pt on input line 120.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 119.
+(Font)              scaled to size 8.0pt on input line 120.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 119.
+(Font)              scaled to size 8.0pt on input line 120.
 [1
 
 ] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 139.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
  (./SoP_OSU.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 139.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
 Package rerunfilecheck Info: File `SoP_OSU.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
  ) 
 Here is how much of TeX's memory you used:
- 37914 strings out of 492970
- 748794 string characters out of 6133938
- 958133 words of memory out of 5000000
- 41470 multiletter control sequences out of 15000+600000
- 532650 words of font info for 73 fonts, out of 8000000 for 9000
+ 37920 strings out of 492970
+ 749033 string characters out of 6133938
+ 959133 words of memory out of 5000000
+ 41472 multiletter control sequences out of 15000+600000
+ 532674 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,12n,89p,10426b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,11n,89p,10426b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on SoP_OSU.pdf (2 pages).

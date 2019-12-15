@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.31)  13 DEC 2019 17:46
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.31)  14 DEC 2019 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1246,6 +1246,18 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 4.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/bx/it' will be
 (Font)              scaled to size 10.0pt on input line 12.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00015pt on input line 14.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.0001pt on input line 14.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 14.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99985pt on input line 14.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.9999pt on input line 14.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 14.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 15.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
@@ -1264,11 +1276,11 @@ Package rerunfilecheck Info: File `SoP_MSU.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
  ) 
 Here is how much of TeX's memory you used:
- 37927 strings out of 492970
- 749271 string characters out of 6133938
- 960133 words of memory out of 5000000
- 41474 multiletter control sequences out of 15000+600000
- 532690 words of font info for 78 fonts, out of 8000000 for 9000
+ 37945 strings out of 492970
+ 750078 string characters out of 6133938
+ 959133 words of memory out of 5000000
+ 41483 multiletter control sequences out of 15000+600000
+ 533275 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,11n,89p,10426b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 

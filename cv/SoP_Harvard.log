@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.31)  14 DEC 2019 22:13
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.31)  14 DEC 2019 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1277,7 +1277,7 @@ Package rerunfilecheck Info: File `SoP_Harvard.out' has not changed.
 Here is how much of TeX's memory you used:
  37942 strings out of 492970
  750111 string characters out of 6133938
- 960183 words of memory out of 5000000
+ 960154 words of memory out of 5000000
  41483 multiletter control sequences out of 15000+600000
  533275 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

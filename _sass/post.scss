@@ -292,3 +292,15 @@
     height: 500px;
     margin: 0 0 1.75em 0;
 }
+
+/*For the photo wall*/
+.grid-item {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: auto;
+}
+
+.grid-item--width2 { width: 40%; }
+.grid-item--height2 { height: 100%; }

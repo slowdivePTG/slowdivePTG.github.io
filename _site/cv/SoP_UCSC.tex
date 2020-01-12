@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awesome Cover Letter
+% XeLaTeX Template
+% Version 1.1 (9/1/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original authors:
+% Claud D. Park (posquit0.bj@gmail.com)
+% Lars Richter (mail@ayeks.de)
+% With modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template must be compiled with XeLaTeX, the below lines will ensure this
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+\usepackage[version=4]{mhchem}
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+ 
+\fontdir[fonts/] % Specify the location of the included fonts
+
+% Color for highlights
+\colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+%\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
+
+% Colors for text - uncomment and modify
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%----------------------------------------------------------------------------------------
+
+\name{Statement of Purpose:}{UCSC}
+\address{CHANG LIU\\Department of Astronomy, Peking University}
+
+\email{ptg.cliu@pku.edu.cn}
+\homepage{https://slowdiveptg.github.io}
+\github{slowdivePTG}
+%\skype{skypeid}
+%\stackoverflow{SOid}{SOname}
+%\twitter{@twit}
+%\linkedin{linkedin name}
+%\reddit{reddit account}
+%\xing{xing name}
+%\ORCID{https://orcid.org/0000-0002-7866-4531} % Other text you want to include on this line
+
+%\position{Undergraduate Student in Astrophysics} % Your expertise/fields
+%\quote{``Explore the universe, benefit the society."} % A quote or statement
+
+\makecvfooter{\today}{Chang Liu~~~·~~~State of Purpose}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+%----------------------------------------------------------------------------------------
+%	RECIPIENT/POSITION/LETTER INFORMATION
+%	All of the below lines must be filled out
+%----------------------------------------------------------------------------------------
+
+\recipient{Graduate Student}{Caltech\\1200 E California Boulevard\\Pasadena, CA 91125} % The company being applied to
+
+\letterdate{\today} % The date on the letter, default is the date of compilation
+
+\lettertitle{Statement of Purpose} % The title of the letter
+
+\letteropening{Dear Mr./Ms./Dr. LastName,} % How the letter is opened
+
+\letterclosing{Sincerely,} % How the letter is closed
+
+\letterenclosure[Attached]{Curriculum Vitae} % Any enclosures with the letter
+
+\makecvfooter{\today}{Chang Liu~~~·~~~Statement of Purpose: UCSC}{} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+  
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvheader % Print the header
+
+%\makelettertitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\begin{cvletter}
+
+%------------------------------------------------
+
+\input{SoP}
+
+\lettersection{Why UCSC? - Academic Interests and Plans}
+%------------------------------------------------
+With unparalleled observational resources, UCSC is one of the world’s centers for astronomy. Working at UCSC as a visitor for months, I am also deeply impressed by the power of computational methods in understanding extreme astrophysical environments. UCSC highly emphasized academic training and independent research for graduate students. I would have access to diversified cutting-edge astrophysics knowledge in taking the courses as well as attending lunch talks, FLASH talks, colloquiums, and conferences. As a member of a spontaneously organized journal club of astrophysics within us undergraduate students, I deeply understand how the journal clubs on recent arXiv papers at UCSC can hone my academic presentation skills.
+
+The 2020s' will witness the rise of time-domain and multi-messenger astronomy, especially after the first light of LSST and the launch of LISA. My experiences in observing the time-domain sky and modeling the evolution of compact binaries help to build my intense interest in the most energetic, ``breath-taking'’ events. I plan to perform my future research on various high-energy transients such as compact binaries and supernovae. I am not too surprised to find that UCSC meets so perfectly with my research experience. It would be great if I can continue working with Prof. Enrico Ramirez-Ruiz, whose excellent research covers a great breadth of computational astrophysics, including compact binary evolution, GRB triggers, and tidal events around black holes. Under his supervision, revealing the nature of compact objects with sophisticated observational properties through simulations is bound to be an exciting journey. Prof. Ryan Foley is one of the greatest supernovae hunters. I am particularly interested in electromagnetic counterparts to gravitational wave sources, of which he has rich observational experience. Besides, I also appreciate Prof. Brant Robertson’s leading work in the Computational Astrophysics Research Group, aiming at understanding the large scale structure, reionization, and intergalactic medium through advanced numerical methodologies.
+
+I do appreciate it if you could consider my application. I am looking forward to meeting with you for a more detailed talk soon.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{./h2co.pdf} 
+	\caption{
+		Evolution of \ce{H2CO} inside a typical molecular cloud at different Galactic distances ($1$, $2$, $4$, and $8$ kpc) after irradiated by X-ray for $10^6$ yr. 
+	}
+	\label{fig:1} 
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{./Period_Class.eps} 
+	\caption{
+		Templates for light curve classification.
+	}
+	\label{fig:2} 
+\end{figure}
+\begin{figure} 
+	\centering
+	\includegraphics[width=0.9\linewidth]{./TorqueDensity.png} 
+	\caption{
+		Torque density of a direct impact system visualized with the Python package \href{https://yt-project.org}{\texttt{yt}},.
+	}
+	\label{fig:3} 
+\end{figure}
+ 
+\end{cvletter}
+
+%----------------------------------------------------------------------------------------
+
+%\makeletterclosing % Print the signature and enclosures
+
+\end{document}

@@ -63,19 +63,9 @@ I am always fascinated by anything allowing me to <i>speak to myself</i> - all t
     <span class="text">Pasadena, CA, US</span>
   </div>
   <div class="container">
-    <img src="../assets/JingShan.jpeg" alt="">
-     <span class="pic_title">JingShan Park</span>
-    <span class="text">Beijing, China</span>
-  </div>
-  <div class="container">
     <img src="../assets/WestLake.jpeg" alt="">
      <span class="pic_title">West Lake</span>
     <span class="text">Hangzhou, Zhejiang, China</span>
-  </div>
-  <div class="container">
-    <img src="../assets/WestCliffDrive.jpeg" alt="">
-     <span class="pic_title">West Cliff Drive</span>
-    <span class="text">Santa Cruz, CA, US</span>
   </div>
   <div class="container">
     <img src="../assets/UCSCFarm1.jpeg" alt="">

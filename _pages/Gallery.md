@@ -43,9 +43,19 @@ I am always fascinated by anything allowing me to <i>speak to myself</i> - all t
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <div class="container-all">
   <div class="container">
-    <img src="../assets/SantaCruz.jpeg" alt="">
-     <span class="pic_title">Santa Cruz Boardwalk</span>
-    <span class="text">Santa Cruz, CA, US</span>
+    <img src="../assets/PKUEastGate.jpeg" alt="">
+     <span class="pic_title">PKU East Gate</span>
+    <span class="text">Haidian, Beijing, China</span>
+  </div>
+  <div class="container">
+    <img src="../assets/WestLake.jpeg" alt="">
+     <span class="pic_title">West Lake</span>
+    <span class="text">Hangzhou, Zhejiang, China</span>
+  </div>
+  <div class="container">
+    <img src="../assets/Caltech.jpeg" alt="">
+     <span class="pic_title">Caltech</span>
+    <span class="text">Pasadena, CA, US</span>
   </div>
   <div class="container">
     <img src="../assets/Manhattan.jpeg" alt="">
@@ -58,17 +68,17 @@ I am always fascinated by anything allowing me to <i>speak to myself</i> - all t
     <span class="text">Los Angeles, CA, US</span>
   </div>
   <div class="container">
-    <img src="../assets/Caltech.jpeg" alt="">
-     <span class="pic_title">Caltech</span>
-    <span class="text">Pasadena, CA, US</span>
-  </div>
-  <div class="container">
-    <img src="../assets/WestLake.jpeg" alt="">
-     <span class="pic_title">West Lake</span>
-    <span class="text">Hangzhou, Zhejiang, China</span>
+    <img src="../assets/SantaCruz.jpeg" alt="">
+     <span class="pic_title">Santa Cruz Boardwalk</span>
+    <span class="text">Santa Cruz, CA, US</span>
   </div>
   <div class="container">
     <img src="../assets/UCSCFarm1.jpeg" alt="">
+     <span class="pic_title">UCSC Farm</span>
+    <span class="text">Santa Cruz, CA, US</span>
+  </div>
+  <div class="container">
+    <img src="../assets/UCSCFarm3.jpeg" alt="">
      <span class="pic_title">UCSC Farm</span>
     <span class="text">Santa Cruz, CA, US</span>
   </div>

@@ -635,6 +635,24 @@
 	\end{tabular*}%
 }
 
+% Define an environment for cvpublications
+\newenvironment{cvpubs}{%
+	\vspace{\acvSectionContentTopSkip}
+	\begin{center}
+	}{%
+	\end{center}
+}
+% Define an entry of publications
+% Usage: \cvpub{<description>}
+\newcommand*{\cvpub}[1]{%
+	\vspace{-2.0mm}
+	\setlength\tabcolsep{0pt}
+	\setlength{\extrarowheight}{0pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+		\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#1}}
+	\end{tabular*}%
+}
+
 % Define an environment for cvreferences
 \newenvironment{cvreferences}{%
 	\vspace{\acvSectionContentTopSkip}

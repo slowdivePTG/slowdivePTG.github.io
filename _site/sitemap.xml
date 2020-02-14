@@ -27,6 +27,10 @@
 <loc>http://localhost:4000/offline</loc>
 </url>
 <url>
+<loc>http://localhost:4000/assets/h2co.pdf</loc>
+<lastmod>2020-01-09T15:11:27+08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/cv/resume_cv.pdf</loc>
 <lastmod>2020-02-11T19:18:54+08:00</lastmod>
 </url>

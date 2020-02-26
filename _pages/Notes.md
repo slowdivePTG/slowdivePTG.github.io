@@ -26,4 +26,6 @@ Notes on several Mathematics & Astronomy undergraduate courses in Peking Univers
 2. 天体物理动力学 (Galactic Dynamics, Xian Chen)
 
 ## Acknoledgement
-Thank [Jiaxuan Li](https://astrojacobli.github.io) for taking the notes on Observational Experiments of Astrophysics when I was in UCSC. Thank Fengwei Xu for revising my notes on Theoretical Astrophysics.
+感谢[李嘉轩](https://astrojacobli.github.io)在我出访UCSC期间留下了天体物理观测实验的笔记！感谢[许峰玮](https://github.com/XFengwei)修改完善了理论天体物理的笔记！
+
+Thank [Jiaxuan Li](https://astrojacobli.github.io) for taking the notes on Observational Experiments of Astrophysics when I was in UCSC. Thank [Fengwei Xu](https://github.com/XFengwei) for revising my notes on Theoretical Astrophysics.

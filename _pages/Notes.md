@@ -7,15 +7,23 @@ menutitle: Notes
 title:     Notes on Several Courses
 ---
 
-> Notes on several Mathematics & Astronomy undergraduate courses in Peking University
+Notes on several Mathematics & Astronomy undergraduate courses in Peking University
+## 大三上
+- Autumn Semester in Grade 3
+1. 理论天体物理 (Theoretical Astrophysics, Fukun Liu)
+2. 数理统计 (Mathematical Statistics, Xiaohua Zhou)
+3. 天文技术与方法I (Astronomical Techniques and Methods I-Optical and Infrared, Huawei Zhang)
+## 大三下
+- Spring Semester in Grade 3
+1. 天体光谱学 (Astronomical Spectroscopy, Linhua Jiang)
+2. 物理宇宙学基础 (Basics of Cosmological Physics, Yingjie Peng)
+## 大四上
+- Autumn Semester in Grade 4
+1. 天体物理观测实验（Observational Experiments of Astrophysics, Ran Wang, Jing Wang, and Linhua Jiang）
+## 大四下
+- Spring Semester in Grade 4
+1. 常微分方程 (Ordinary Differential Equations, Weigu Li)
+2. 天体物理动力学 (Galactic Dynamics, Xian Chen)
 
-### 大三上
-- First Semester in Grade 3
-1. [理论天体物理](https://github.com/slowdivePTG/Notes/tree/master/Theoretical%20Astrophysics) (Theoretical Astrophysics, Fukun Liu)
-2. [数理统计](https://github.com/slowdivePTG/Notes/tree/master/Mathematical%20Statistics) (Mathematical Statistics, Xiaohua Zhou)
-3. [天文技术与方法I](https://github.com/slowdivePTG/Notes/tree/master/Astronomical%20Techniques%20and%20Methods%20I-Optical%20and%20Infrared) (Astronomical Techniques and Methods I-Optical and Infrared, Huawei Zhang)
-
-### 大三下
-- Second Semester in Grade 3
-1. [天体光谱学](https://github.com/slowdivePTG/Notes/tree/master/Astronomical%20Spectroscopy) (Astronomical Spectroscopy, Linhua Jiang)
-2. [物理宇宙学基础](https://github.com/slowdivePTG/Notes/tree/master/Basics%20of%20Cosmological%20Physics) (Basics of Cosmological Physics, Yingjie Peng)
+## Acknoledgement
+Thank [Jiaxuan Li](https://astrojacobli.github.io) for taking the notes on Observational Experiments of Astrophysics when I was in UCSC. Thank Fengwei Xu for revising my notes on Theoretical Astrophysics.

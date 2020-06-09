@@ -45,6 +45,6 @@ title:     My Researches
 - Hydrodynamical simulation is conducted to study the destiny of direct impact systems in certain parameter spaces.
 
 <figure>
-   <img src="{{ "/assets/TorqueDensity.png" | absolute_url }}" />
+   <img src="{{ "/assets/TorqueDensity.pdf" | absolute_url }}" />
    <figcaption>Torque density of a direct impact system.</figcaption>
 </figure>

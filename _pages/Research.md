@@ -11,7 +11,7 @@ title:     My Researches
 ***Advisor: [Xian Chen](http://kiaa.pku.edu.cn/people/xian-chen-陈弦)***
 
 - Part of *the Undergraduate Research & Training Program* at PKU, and funded by *the National Innovation Training Program*.
-- First-authored paper [Impact of an Active Sgr A* on the Synthesis of Water and Organic Molecules Throughout the Milky Way]((https://arxiv.org/abs/2002.03086)) submitted to *ApJ*, arXiv ID: [2002.03086](https://arxiv.org/abs/2002.03086).
+- First-authored paper [Impact of an Active Sgr A* on the Synthesis of Water and Organic Molecules Throughout the Milky Way](https://iopscience.iop.org/article/10.3847/1538-4357/aba758) .
 - The supermassive black hole (SMBH) in our galaxy which is currently quiescent must have undergone active galactic nuclei (AGN) phases.
 - Recent observations show evidence for an AGN event 2-8 Myr ago in the Milky Way, of which the hard X-ray radiation could efficiently penetrate the dense, dusty galactic disk and can lead to the synthesis of complex species related to the origin of life.
 - Simulation on a gaseous model is conducted based on dense molecular cloud including X-ray ionization and simple surface processes, testing whether several typical prebiotic species show observable changes in abundance with a former AGN. The influence of the galactic location and column density of the molecular gas are also discussed.

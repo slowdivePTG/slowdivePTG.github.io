@@ -1,8 +1,7 @@
 ---
 layout:    page
 permalink: "/Gallery"
-author:    Chang
-weight:    5
+weight:    100
 cover:     /assets/Islands.jpg
 menutitle: Gallery
 title:     Photography & Writings

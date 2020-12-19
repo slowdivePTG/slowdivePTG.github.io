@@ -10,28 +10,28 @@ Chang:
     employment:
         - time:             "09.2020 - "
           location:         "Beijing, China"
-          company:          "Kavli Institute for Astronomy and Astrophysics, Peking University"
+          company:          "Kavli team for Astronomy and Astrophysics, Peking University"
           position:         "Research Assistant"
           responsibilities:
             - "Circumstellar Exoplanets"
             - "Microlensing"
     projects:
         - time:             "2018.7 - 2019.11"
-          team:             "Peking University, Beijing, China"
+          team:        "Peking University, Beijing, China"
           title:            "Impact of an AGN on Molecular Species In Our Galaxy"
           responsibilities:
             - "Undergraduate Research & Training Program."
             - "AGN induced chemistry in molecular clouds."
             - "Chemical evolution of complex biotic organic molecules."
         - time:             "2019.6 - 2019.8"
-          team:             "Caltech, Pasadena, US"
+          team:        "Caltech, Pasadena, US"
           title:            "A Systematic Search For Periodic White Dwarfs With ZTF"
           responsibilities:
             - "Summer Undergraduate Research Fellowship (SURF)."
             - "Systematic study on white dwarf candidates with short periods."
             - "Classification for interesting variables."
         - time:             "2019.10 - 2020.6"
-          team:             "UC Santa Cruz, Santa Cruz, US"
+          team:        "UC Santa Cruz, Santa Cruz, US"
           title:            "The Hydrodynamics of Mass Transfer in Compact Binaries"
           responsibilities:
             - "Undergradute Thesis."

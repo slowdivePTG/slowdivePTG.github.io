@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/blog/on%20the%20road/The_Wind_Farther_Than_The_Farthest</loc>
+<loc>http://localhost:4000/blog/on%20the%20road/The-Wind-Farther-than-the-Farthest</loc>
 <lastmod>2018-07-12T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/when%20the%20music%20is%20over/My_Sunsets_fade</loc>
+<loc>http://localhost:4000/blog/%C3%A0%20la%20recherche%20du%20temps%20perdu/My-Sunsets-fade</loc>
 <lastmod>2019-01-01T00:00:00+08:00</lastmod>
 </url>
 <url>

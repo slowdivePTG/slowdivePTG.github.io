@@ -9,6 +9,9 @@ layout: compress
     <div class="site-wrapper">
         {% include header.html %}
         {{ content }}
+        <footer class="post-footer">
+            {% include authorinfo.html param=page.author %}
+        </footer>
         {% include footer.html %}
     </div>
 </body>

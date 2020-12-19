@@ -2,10 +2,9 @@
 layout:            post
 date:              2019-01-01
 title:             "My Sunsets Fade"
-menutitle:         "My Sunsets Fade"
-author:            Chang
-tags:              When The Music Is Over
-category:          When The Music Is Over
+menutitle:         "My Sunsets Fade - Remembrance of 2018"
+tags:              À la recherche du temps perdu
+category:          À la recherche du temps perdu
 ---
 
 ## Chapter 1 - The First Autumn

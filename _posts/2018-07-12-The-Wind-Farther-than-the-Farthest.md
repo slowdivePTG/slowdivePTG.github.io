@@ -1,11 +1,10 @@
 ---
 layout:            post
-title:             "The Wind Farther Than The Farthest"
+title:             "The Wind Farther than the Farthest"
+menutitle:         "The Wind Farther than the Farthest: to Hulunbuir"
 date:              2018-07-12
 tags:              On The Road
 category:          On The Road
-author:            Chang
-math:              true
 ---
 
 ## 远在远方的风

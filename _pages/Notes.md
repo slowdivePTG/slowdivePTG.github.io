@@ -1,7 +1,6 @@
 ---
 layout:    page
 permalink: "/Notes"
-author:    Chang
 weight:    6
 menutitle: Notes
 title:     Notes on Several Courses

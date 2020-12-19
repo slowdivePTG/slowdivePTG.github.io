@@ -3,6 +3,7 @@ layout:    page
 permalink: "/Gallery"
 author:    Chang
 weight:    5
+cover:     /assets/Islands.jpg
 menutitle: Gallery
 title:     Photography & Writings
 ---
@@ -39,7 +40,7 @@ I am always fascinated by anything allowing me to <i>speak to myself</i> - all t
   </ul>
   {% endfor %}
 
-
+<!--
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <div class="container-all">
   <div class="container">
@@ -88,3 +89,4 @@ I am always fascinated by anything allowing me to <i>speak to myself</i> - all t
     <span class="text">Santa Cruz, CA, US</span>
   </div>
   </div>
+-->

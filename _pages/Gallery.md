@@ -2,12 +2,12 @@
 layout:    page
 permalink: "/Gallery"
 weight:    100
-cover:     /assets/Islands.jpg
+cover:     /assets/gallery.jpg
 menutitle: Gallery
 title:     Photography & Writings
 ---
 
-I am always fascinated by anything allowing me to <i>speak to myself</i> - all those *pure* and *interesting* issues including **photography**, **classic & rock music** and **literature**. My new (non-academic and capricious) writings are posted below, including but not limited to travel journals and surrealistic thoughts.
+I am always fascinated by anything allowing me to <i>speak to myself</i> - all those *magical* and *pellucid* issues including **photography**, **classic & rock music** and **literature**. My new (non-academic and capricious) writings are posted below, including but not limited to travel journals and surrealistic thoughts.
 
   {% assign sorted_cats = site.categories | sort %}
   {% for category in sorted_cats %}

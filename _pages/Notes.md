@@ -6,7 +6,7 @@ menutitle: Notes
 title:     Notes on Several Courses
 ---
 
-Here is a list of my notes on several Astronomy (& Mathematics) courses in Peking University. All the notes are written in Markdown. Please visit my GitHub repo [Notes](https://github.com/slowdivePTG/Notes).
+Here is a list of my notes on several Astronomy (& Mathematics) courses in Peking University. All the notes are written in Markdown. Please visit my [GitBook](https://slowdiveptg.gitbook.io/notes/), or directly download from my [GitHub repo](https://github.com/slowdivePTG/Notes).
 
 - Autumn Semester in Grade 3
 1. 理论天体物理 (Theoretical Astrophysics, Fukun Liu)

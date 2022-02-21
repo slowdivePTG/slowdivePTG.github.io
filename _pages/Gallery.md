@@ -2,7 +2,6 @@
 layout:    page
 permalink: "/Gallery"
 weight:    100
-cover:     /assets/page/gallery.jpg
 menutitle: Gallery
 title:     Photography & Writings
 ---

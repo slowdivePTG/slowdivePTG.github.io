@@ -29,7 +29,7 @@ title:     My Researches
 - A sample of 81 periodic white dwarfs (WDs) with periods between 1 and 3 hr is selected from a population of 486,641 WDs in the second data release of the Gaia mission, by applying Lomb-Scargle periodogram to light curves obtained with ZTF.
 - Several sources of interest (eclipsing, reflection, accreting and contact binaries) are identified through a combined analysis of both light curves (ZTF) and colors (Gaia, PanSTARRS).
 <figure>
-   <img src="{{ "/assets/Science/Period_Class.eps" | absolute_url }}" />
+   <img src="{{ "/assets/Science/Period_Class.pdf" | absolute_url }}" />
    <figcaption>Templates for light curve classification.</figcaption>
 </figure>
 <br><br><br>

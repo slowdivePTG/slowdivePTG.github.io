@@ -6,7 +6,7 @@ menutitle: Gallery
 title:     Photography & Writings
 ---
 
-I am always fascinated by anything allowing me to <i>speak to myself</i> - all those *magical* and *pellucid* issues including **photography**, **classic & rock music** and **literature**. My new (non-academic and capricious) writings are posted below, including but not limited to travel journals and surrealistic thoughts.
+I am always fascinated by anything allowing me to <i>speak to myself</i> - all those *magical* and *pellucid* issues including **photography**, **classic & rock music** and **literature**. Some of my photos are posted on my <u><a href = 'https://ptgcliu.myportfolio.com/work'> Adobe Portfolio</a></u>. My new (non-academic and capricious) writings are posted below, including but not limited to travel journals and surrealistic thoughts.
 
   {% assign sorted_cats = site.categories | sort %}
   {% for category in sorted_cats %}

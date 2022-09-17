@@ -204,7 +204,8 @@
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{8.5pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+%\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{graytext} #1}}
 \newcommand*{\mentorstyle}[1]{{\fontsize{9pt}{1em}\bfseries\bodyfontlight\upshape\color{text} #1}}
 
 % For elements of subentry
@@ -373,13 +374,13 @@
 %% Define helper macros a user can change easily
 % Header
 \newcommand{\acvHeaderNameDelim}{\space}
-\newcommand{\acvHeaderAfterNameSkip}{.4mm}
-\newcommand{\acvHeaderAfterPositionSkip}{.4mm}
-\newcommand{\acvHeaderAfterAddressSkip}{-.5mm}
+\newcommand{\acvHeaderAfterNameSkip}{1ex}
+\newcommand{\acvHeaderAfterPositionSkip}{.6mm}
+\newcommand{\acvHeaderAfterAddressSkip}{-.3mm}
 \newcommand{\acvHeaderIconSep}{\space}
 \newcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \newcommand{\acvHeaderAfterSocialSkip}{6mm}
-\newcommand{\acvHeaderAfterQuoteSkip}{5mm}
+\newcommand{\acvHeaderAfterQuoteSkip}{3mm}
 
 % Others
 \newcommand{\acvSectionTopSkip}{3mm}
@@ -582,10 +583,23 @@
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4}}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+      \entrypositionstyle{#1} & \entrydatestyle{#4}}
+    \ifempty{#5}{}{\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
+  \end{tabular*}%
+}
+% Define an simplified entry of cv information
+% Usage: \cvsimpentry{<position>}{<title>}{<date>}
+\newcommand*{\cvsimpentry}[4]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \ifempty{#3}
+      {\entrytitlestyle{#2}\quad \entrypositionstyle{#1} & }
+    {\entrytitlestyle{#2} \entrypositionstyle{#1} & \entrydatestyle{#3} }
+    \ifempty{#4}{}{\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#4}}}
   \end{tabular*}%
 }
 
@@ -682,15 +696,15 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{1.5cm} L{\textwidth - 2cm}}
 }{%
     \end{tabular*}
   \end{center}
 }
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
-\newcommand*{\cvhonor}[4]{%
-  \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+\newcommand*{\cvhonor}[3]{%
+  \honordatestyle{#3} & \honorpositionstyle{#1}, \honortitlestyle{#2} \\
 }
 
 % Define an environment for cvskill
@@ -716,7 +730,7 @@
   \vspace{-4.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{0pt}
+    \setlength{\parskip}{0.5ex}
     \renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}

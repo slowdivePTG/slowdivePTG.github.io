@@ -12,7 +12,7 @@
 
 .single-post {
     .post-content img, .post-title, .post-meta {
-        max-width: 700px;
+        max-width: 800px;
         width: 100%;
         margin: auto;
     }
@@ -111,10 +111,11 @@
     figcaption {
         position: absolute;
         top: 0;
-        right: 670px;
+        right: 102.5%;
         font-style: italic;
         text-align: right;
-        width: 180px;
+        width: 25%;
+        max-width: 180px;
         padding-top: 10px;
         line-height: 1.5;
         color: #999;

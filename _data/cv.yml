@@ -1,12 +1,15 @@
 Chang:
-    profile: "Below is a PDF version of my CV (last updated on Apr 2023). You can also download it <a href='https://slowdiveptg.github.io/cv/resume_cv.pdf' target='_blank'>here</a>."
-    skills:
-        - "Programing: Proficient: Python, Experienced: Fortran, C/C++, HTML"
-        - "Softwares: Pypeit (optical/NIR spectrum reduction, Photoshop (as a shutterbug))"
+    profile: "Below is a PDF version of my CV (last updated on Aug 2023). You can also download it <a href='https://slowdiveptg.github.io/cv/resume_cv.pdf' target='_blank'>here</a>."
+    # skills:
+    #     - "Programing: Proficient: Python, Experienced: Fortran, C/C++, HTML"
+    #     - "Softwares: Pypeit (optical/NIR spectrum reduction, Photoshop (as a shutterbug))"
     education:
         - time:             "09.2021 - "
           location:         "Northwestern University"
           description:      "Graduate student"
+        - time:             "09.2021 - 06.2023"
+          location:         "Northwestern University"
+          description:      "Master of Science"
         - time:             "09.2016 - 06.2020"
           location:         "Peking University"
           description:      "Bachelor of Science (Hon), Astronomy"

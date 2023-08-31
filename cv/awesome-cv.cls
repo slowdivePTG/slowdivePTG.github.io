@@ -669,6 +669,13 @@
 		\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#1}}
 	\end{tabular*}%
 }
+% Define an entry of each publication
+% Usage: \cvsubpub{<author>}{<href>}{<title>}{<journal>}
+\newcommand*{\cvsubpub}[5]{%
+  \ifempty{#2}
+	{{#1}, \href{#3}{\entrypositionstyle{#4}}, {\itshape #5}}
+  {{#1} (including {#2}), \href{#3}{\entrypositionstyle{#4}}, {\itshape #5}}%
+}
 
 % Define an environment for cvreferences
 \newenvironment{cvreferences}{%

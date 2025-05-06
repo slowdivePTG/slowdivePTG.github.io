@@ -18,7 +18,7 @@ The detonation of a helium shell atop a sub-Chandrasekhar mass white dwarf (WD) 
 Only a handful of such peculiar events have been discovered, among which SN 2020jgb is the most recent one. We find that it is consistent with a sub-solar mass WD ignited by a massive (over 0.1 solar mass) shell. We also detect tentative features of unburnt helium in its spectrum, which could be smoking-gun evidence for the existence of a helium shell.
 
 <figure>
-   <img src="{{ "/assets/Science/model.pdf" | absolute_url }}"/>
+   <img src="{{ "/assets/Science/model.png" | absolute_url }}"/>
    <figcaption>Double detonation models with a massive helium shell reproduce the luminosity and spectral features of the peculiar event, SN 2020jgb.</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Stars grazing supermassive black holes (SMBHs) on bound orbits may survive tidal
 We find the flare structures of eccentric TDEs show a complicated dependence on both the SMBH mass and the orbital period. For stars orbiting SMBHs with relatively short periods, we predict significantly shorter-lived duration flares than those in parabolic TDEs, which can be used to predict repeating events if the mass of the SMBH can be independently measured. Using an adiabatic mass loss model, we study the flare evolution over multiple passages, and show the evolved stars can survive many more passages than main sequence stars. 
 
 <figure>
-   <img src="{{ "/assets/Science/Mdot_T.pdf" | absolute_url }}"/>
+   <img src="{{ "/assets/Science/Mdot_T.png" | absolute_url }}"/>
    <figcaption>Mass fallback curves from a sun-like star being disrupted by a SMBH in a variety of eccentric orbits.</figcaption>
 </figure>
 

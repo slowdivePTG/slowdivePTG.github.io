@@ -9,6 +9,17 @@ _site/
 vendor/
 Gemfile.lock
 
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.bbl
+*.blg
+
 # Operating system files
 .DS_Store
 .DS_Store?

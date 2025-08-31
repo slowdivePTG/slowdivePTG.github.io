@@ -192,3 +192,6 @@ orcid-ID.png
 galSpec*.fits
 
 SN2022an/
+
+# Demo files (not for production)
+*-demo.html

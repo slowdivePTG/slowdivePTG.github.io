@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <metadata>Optimized ORCID icon for IcoMoon integration</metadata>
+  <!-- Compact ORCID icon optimized for small sizes and font integration -->
+  <path fill="currentColor" d="M512 960c-247.424 0-448-200.576-448-448s200.576-448 448-448 448 200.576 448 448-200.576 448-448 448zm0-832c-212.077 0-384 171.923-384 384s171.923 384 384 384 384-171.923 384-384-171.923-384-384-384zm-192 224h64v320h-64v-320zm0 384h64v64h-64v-64zm128-384h96c70.692 0 128 57.308 128 128s-57.308 128-128 128h-96v-256zm64 64v128h32c35.346 0 64-28.654 64-64s-28.654-64-64-64h-32z"/>
+</svg>

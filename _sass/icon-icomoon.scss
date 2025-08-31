@@ -36,6 +36,7 @@ $icon-linkedin: "\eac9";
 $icon-stackoverflow: "\ead0";
 $icon-pinterest: "\ead1";
 $icon-xing: "\ead3";
+$icon-orcid: "\ead4";
 
 @font-face {
     font-family: 'icomoon';
@@ -402,5 +403,15 @@ $icon-xing: "\ead3";
 
     &:hover {
         color: #007072;
+    }
+}
+
+.icon-orcid {
+    &:before {
+        content: $icon-orcid;
+    }
+
+    &:hover {
+        color: #A6CE39;
     }
 }

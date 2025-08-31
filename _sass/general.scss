@@ -74,10 +74,29 @@ a {
     text-decoration: none;
     color: $color-text-link;
     transition: color 0.3s ease;
+    position: relative;
 
     &:hover {
         text-decoration: underline;
         color: $color-text-link-hover;
+    }
+    
+    // Special hover effect for links in content
+    &:not(.page-link):not(.icon-mail):not(.icon-github) {
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #4E2A84, #8E44AD);
+            transition: width 0.3s ease;
+        }
+        
+        &:hover::after {
+            width: 100%;
+        }
     }
 }
 

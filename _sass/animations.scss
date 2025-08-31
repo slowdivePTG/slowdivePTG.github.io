@@ -1,0 +1,98 @@
+// Enhanced animations for the personal website (simplified)
+
+// Floating animation for cards (subtle)
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+// Subtle glow effect
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,.08), 0 6px 20px 0 rgba(0,0,0,.1);
+    }
+    50% {
+        box-shadow: 0 4px 8px 0 rgba(78, 42, 132, 0.15), 0 6px 20px 0 rgba(78, 42, 132, 0.2);
+    }
+}
+
+// Enhanced card floating effect (subtle)
+.md-card {
+    animation: float 8s ease-in-out infinite;
+    
+    &:nth-child(odd) {
+        animation-delay: -4s;
+    }
+    
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+// Smooth transitions for interactive elements only
+button, a, .md-card {
+    transition: all 0.3s ease;
+}
+
+// Enhanced image hover effects
+img {
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.02);
+        filter: brightness(1.05) contrast(1.05);
+    }
+}
+
+// Loading state for cards
+.md-card.loading {
+    animation: glow 2s ease-in-out infinite;
+}
+
+// Enhanced focus states for accessibility
+:focus-visible {
+    outline: 2px solid #4E2A84;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+// Micro-interactions for buttons and links
+button, .page-link {
+    cursor: pointer;
+    user-select: none;
+    
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+// Responsive animation adjustments
+@media (max-width: 768px) {
+    .md-card {
+        animation: none; // Disable floating on mobile for performance
+    }
+}
+
+// Print media - disable all animations
+@media print {
+    *, *::before, *::after {
+        animation-duration: 0s !important;
+        animation-delay: 0s !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}
+
+// Animation toggle class for accessibility
+.animations-disabled {
+    *, *::before, *::after {
+        animation-duration: 0s !important;
+        animation-delay: 0s !important;
+        transition-duration: 0.15s !important; // Keep minimal transitions for usability
+        transition-delay: 0s !important;
+    }
+}

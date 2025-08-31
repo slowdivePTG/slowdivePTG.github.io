@@ -213,6 +213,7 @@
 \newcommand*{\simpentrypositionstyle}[1]{{\fontsize{11pt}{1.2em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1.2em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1.2em}\bodyfontlight\slshape\color{awesome-darknight} #1}}
+\newcommand*{\entrysmalllocationstyle}[1]{{\fontsize{9pt}{1.2em}\bodyfontlight\slshape\color{awesome-darknight} #1}}
 % \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1.2em}\bodyfontlight\upshape\color{text} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1.2em}\bodyfont\color{graytext} #1}}
 \newcommand*{\mentorstyle}[1]{{\fontsize{10pt}{1.2em}\bfseries\bodyfontlight\upshape\color{text} #1}}
@@ -599,8 +600,8 @@
     \ifempty{#5}{}{\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
   \end{tabular*}%
 }
-% Define an simplified entry of cv information
-% Usage: \cvsimpentry{<position>}{<title>}{<date>}
+% Define an even more simplified entry of cv information
+% Usage: \cvsimpentry{<position>}{<location>}{<title>}
 \newcommand*{\cvsimpentry}[4]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
@@ -610,6 +611,20 @@
     \ifempty{#3}{\quad}{}
     \simpentrytitlestyle{#2} & \entrydatestyle{#3} 
     \ifempty{#4}{}{\\\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#4}}}
+  \end{tabular*}%
+}
+% Define an simplified entry of cv information
+% Usage: \cvsimsimpentry{<position>}{<title>}{<location>}{<date>}
+\newcommand*{\cvsimsimpentry}[4]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}
+    % {@{\extracolsep{\fill}} L{\textwidth - 4cm} R{4cm}}
+    {@{\extracolsep{\fill}} L{\textwidth - 5cm} R{3.5cm} R{1.15cm}}
+    \simpentrypositionstyle{#1}
+    \ifempty{#3}{\quad}{}
+    \simpentrytitlestyle{#2} & \entrysmalllocationstyle{#3} &  \entrydatestyle{#4}
   \end{tabular*}%
 }
 
@@ -682,7 +697,7 @@
 \newcommand*{\cvsubpub}[5]{%
   \ifempty{#2}
 	{{#1}, \href{#3}{{#4}}, {\itshape #5}}
-  {{#1} (including {#2}), \href{#3}{{#4}}, {\itshape #5}}%
+  {{#1} (incl. {#2}), \href{#3}{{#4}}, {\itshape #5}}%
 }
 
 % Define an environment for cvreferences

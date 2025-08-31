@@ -1,4 +1,29 @@
+# Jekyll build outputs
 _site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler
+.bundle/
+vendor/
+Gemfile.lock
+
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -138,17 +163,19 @@ setup_files/
 # HDF data for MCMC chains
 *.h5
 
-# LaTeX
-*.aux
-*.blg
-*.bib
-*.fdb_latexmk
-*.out
-*.synctex.gz
-*.bst
-*.cls
+# LaTeX build files (for CV)
+cv/*.aux
+cv/*.blg
+cv/*.fdb_latexmk
+cv/*.out
+cv/*.synctex.gz
+cv/*.fls
+cv/*.log
 orcid-ID.png
-*.fls
+
+# Keep these LaTeX class files as they're needed
+# *.cls (commented out - you need awesome-cv.cls)
+# *.bst (commented out - might be needed for bibliography)
 
 # SDSS catalog
 galSpec*.fits

@@ -62,9 +62,14 @@ $icon-xing: "\ead3";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     white-space: nowrap;
+    transition: all 0.3s ease;
+    display: inline-block;
 
     &:hover {
         text-decoration: none;
+        transform: translateY(-2px) scale(1.1);
+        filter: brightness(1.2);
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -141,6 +146,9 @@ $icon-xing: "\ead3";
 
     &:hover {
         color: #111;
+        transform: translateY(-2px) scale(1.1);
+        filter: brightness(1.2);
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -311,6 +319,9 @@ $icon-xing: "\ead3";
 
     &:hover {
         color: #4078c0;
+        transform: translateY(-2px) scale(1.1);
+        filter: brightness(1.2);
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 }
 

@@ -36,11 +36,12 @@ $icon-linkedin: "\eac9";
 $icon-stackoverflow: "\ead0";
 $icon-pinterest: "\ead1";
 $icon-xing: "\ead3";
+$icon-orcid: "\ead4";
 
 @font-face {
     font-family: 'icomoon';
-    src: url('#{$icomoon-font-path}/icomoon.eot?el81f6');
-    src: url('#{$icomoon-font-path}/icomoon.eot?el81f6#iefix') format('embedded-opentype'), url('#{$icomoon-font-path}/icomoon.ttf?el81f6') format('truetype'), url('#{$icomoon-font-path}/icomoon.woff?el81f6') format('woff'), url('#{$icomoon-font-path}/icomoon.svg?el81f6#icomoon') format('svg');
+    src: url('#{$icomoon-font-path}/icomoon.eot?v=1.2');
+    src: url('#{$icomoon-font-path}/icomoon.eot?v=1.2#iefix') format('embedded-opentype'), url('#{$icomoon-font-path}/icomoon.ttf?v=1.2') format('truetype'), url('#{$icomoon-font-path}/icomoon.woff?v=1.2') format('woff'), url('#{$icomoon-font-path}/icomoon.svg?v=1.2#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -402,5 +403,18 @@ $icon-xing: "\ead3";
 
     &:hover {
         color: #007072;
+    }
+}
+
+.icon-orcid {
+    &:before {
+        content: $icon-profile;
+    }
+
+    &:hover {
+        color: #a6ce39; // ORCID brand green color
+        transform: translateY(-2px) scale(1.1);
+        filter: brightness(1.2);
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 }

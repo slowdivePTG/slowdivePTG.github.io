@@ -1,9 +1,9 @@
 .md-card {
     color: $color-cv-text;
     font-size: 1.5rem;
-    padding: 25px 40px 5px 40px; // Increased padding for better spacing
-    margin: 0 auto 30px auto;
-    max-width: 750px; // Limit card width to make them less wide
+    padding: 35px 50px 5px 20px;
+    margin: 0 auto 50px auto;
+    max-width: 800px;
     border-radius: 12px;
     background: #ffffff;
     transition: all 0.3s ease;
@@ -88,6 +88,16 @@
         
         ul {
             transition: all 0.3s ease;
+        }
+    }
+
+    // Paragraph spacing controls
+    p {
+        margin-bottom: 1.5rem; // Adjust this value to change spacing between paragraphs
+        margin-top: 0;
+        
+        &:last-child {
+            margin-bottom: 2.5rem; // Remove bottom margin from last paragraph
         }
     }
 

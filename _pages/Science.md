@@ -6,8 +6,6 @@ menutitle: Science
 title:     Research
 ---
 
-I am broadly interested in the transient sky. I enjoying exploring the physics in all kinds of violent transients and telling you the story -- with the help of modern time-domain surveys as well as statistical and computational methods.
-
 ## Helium-shell Double Detonation Supernovae
 
 ***Advisor: [Adam A. Miller](https://www.amillerastro.com)***
@@ -26,8 +24,8 @@ Only a handful of such peculiar events have been discovered, among which SN 2020
 These thick-shell events provide a unique sample to study double detonation SNe, because unlike thin-shell events, these red and sub-luminous SNe are easy to identify. Closely involved in the state-of-the-art optical time-domain surveys (ZTF, and the upcoming LS4 and LSST), we aim to obtain a greater sample of thick-shell helium double detonation SNe to systematically study their observational properties and host environments. This might finally help us answer the questions - what kind of progenitor systems will lead to double detonation, and how they form.
 
 > ***Publications***
+> - **C. Liu**, A. A. Miller, S. J. Boos, et al., *[SN 2022joj: A Peculiar Type Ia Supernova Possibly Driven by an Asymmetric Helium-shell Double Detonation](https://arxiv.org/abs/2308.06319)*, 2023, ApJ, 958, 178.
 > - **C. Liu**, A. A. Miller, A. Polin, et al., *[SN 2020jgb: A Peculiar Type Ia Supernova Triggered by a Helium-Shell Detonation in a Star-Forming Galaxy](https://iopscience.iop.org/article/10.3847/1538-4357/acbb5e/meta)*, 2023, ApJ, 946, 83.
-> - **C. Liu**, A. A. Miller, S. J. Boos, et al., *[SN 2022joj: A Peculiar Type Ia Supernova Possibly Driven by an Asymmetric Helium-shell Double Detonation](https://arxiv.org/abs/2308.06319)*, 2023, submitted to ApJ.
 
 <br /><br />
 
@@ -51,4 +49,5 @@ We find the flare structures of eccentric TDEs show a complicated dependence on 
 We suggest that the recurrent flares of ASASSN-14ko originate from an evolved star on a grazing, bound orbit around the SMBH. Future hydrodynamics simulations of multiple tidal interactions will enable realistic models on the individual flare structure and the evolution over multiple flares.
 
 > ***Publications***
+> - **C. Liu**, R.~Yarza, E.~Ramirez-Ruiz, *[Repeating Partial Tidal Encounters of Sun-like Stars Leading to their Complete Disruption](https://iopscience.iop.org/article/10.3847/1538-4357/ad9b0b)*, 2025, ApJ, 979, 40.
 > - **C. Liu**, B. Mockler, E. Ramirez-Ruiz, et al., *[Tidal disruption events from eccentric orbits and lessons learned from the noteworthy ASASSN-14ko](https://iopscience.iop.org/article/10.3847/1538-4357/acafe1)*, 2023, ApJ, 944, 184.

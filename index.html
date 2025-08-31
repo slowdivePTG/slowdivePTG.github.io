@@ -1,24 +1,31 @@
 ---
 layout: default
-cover: 
+cover:
 ---
 
 <!-- Enhanced header with profile photo -->
-<div class="index-profile-image">
-    <img src="{{ '/assets/page/chang_cover.jpg' | absolute_url }}" alt="Chang Liu" />
-</div>
-<div class="index-profile-info">
-    <h1 class="index-profile-name">Chang Liu (刘畅
-        <button class="audio-pronunciation-btn" id="pronunciation-btn" title="Click to hear pronunciation">
-            <svg class="sound-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
-            </svg>
-        </button>
-        <audio id="pronunciation-audio" preload="metadata">
-            <source src="/assets/changliu.mp3" type="audio/mpeg">
-        </audio>)
-    </h1>
-    <h2 class="index-profile-title">Time-Domain Astronomer</h2>
+<div class="index-profile-container">
+    <div class="index-profile-image">
+        <img src="{{ '/assets/page/chang_cover.jpg' | absolute_url }}" alt="Chang Liu" />
+    </div>
+    <div class="index-profile-info">
+        <h1 class="index-profile-name">Chang Liu 刘畅
+            <button class="audio-pronunciation-btn" id="pronunciation-btn" title="Click to hear pronunciation">
+                <svg class="sound-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+                </svg>
+            </button>
+            <audio id="pronunciation-audio" preload="metadata">
+                <source src="/assets/changliu.mp3" type="audio/mpeg">
+            </audio>
+        </h1>
+        <h2 class="index-profile-position">PhD Candidate</h2>
+        <h3 class="index-profile-affiliation">Center for Interdisciplinary Exploration and Research in Astrophysics
+            (CIERA)
+        </h3>
+        <h3 class="index-profile-affiliation">Northwestern University</h3>
+    </div>
 </div>
 
 <div class="md-card shadow" style="text-align:left;">
@@ -26,12 +33,29 @@ cover:
         <h2>Who Am I?</h2>
     </div>
     <div class="content">
-        <p>I am a PhD candidate at <b><a href='https://ciera.northwestern.edu/directory/chang-liu/'>
+        <p>I am a time-domain astronomer at
+            <a href='https://ciera.northwestern.edu/directory/chang-liu/'>
+                <b>
                     <font color='4E2A84'>Northwestern University</font>
-                </a></b>, working with Prof. Adam Miller.</p>
-        <p>I received my Bachelor of Science in Astronomy from <b><a href='https://astro.pku.edu.cn'>
+                </b>
+            </a>,
+            where I work with Prof. Adam Miller to unravel the mysteries of the transient universe. I earned my Bachelor
+            of Science from
+            <b>
+                <a href='https://astro.pku.edu.cn'>
                     <font color="#8c0000">Peking University</font>
-                </a></b>.</p>
+                </a>
+            </b>.
+        </p>
+        <p>
+            My research leverages advanced data science methodologies to analyze vast datasets from
+            time-domain surveys (ZTF, and the upcoming LS4 and LSST) alongside observations from world-class telescopes
+            including Keck, MMT, and Magellan. My thesis will focus on the demographics of Type Ia supernovae (SNe Ia),
+            the
+            cosmic candles that
+            illuminate our understanding of the dark energy, whose progenitor systems remain a major unknown in
+            astrophysics.
+        </p>
     </div>
 </div>
 <div class="md-card shadow" style="text-align:left;">
@@ -40,10 +64,23 @@ cover:
     </div>
     <div class="content">
         <p>
-            One of my greatest pursuits is to combine state-of-the-art observations with powerful computational methods
-            to understand the transient universe. I have been exploring both observational and computational
-            astrophysics from the violent termination of dead stars to objects torn apart by supermassive black holes.
-            Some of my research highlights are listed in <b><a href="/Science">Science</a></b>.
+            My research vision is to decode the population-level origins of cosmic transients using large,
+            well-monitored samples with complete temporal coverage, from days after explosion to years-long evolution that follows. I apply advanced statistical techniques to mine these extensive
+            datasets, uncovering subtle patterns and correlations that expose the underlying physical processes driving
+            these events. Our work has already illuminated the explosion mechanisms of some of the most peculiar SNe Ia, and is
+            paving the way toward a deeper, population-wide understanding of how these stellar explosions arise.
+        </p>
+        <p>
+            With the primary focus on transient phenomena, my research spans theory, observation, machine
+            learning, and software.
+            I have simulated stars repeatedly torn
+            apart by supermassive black holes, built a machine-learning star-galaxy classifier that drives real-time
+            transient searches in the La Silla Schmidt Southern Survey (LS4), and developed a new spectroscopic
+            technique for precision galaxy background subtraction, enabling far cleaner measurements of transient light.
+        </p>
+        <p>
+            Explore my <b><a href="/Science">research highlights</a></b> to see these discoveries in depth, and the
+            <b><a href="/Software">softwares</a></b> I created.
         </p>
     </div>
 </div>
@@ -53,12 +90,18 @@ cover:
     </div>
     <div class="content">
         <p>
-            I was born in <b><a href='https://en.wikipedia.org/wiki/Xinchang_County'>Xinchang (新昌)</a></b>, China, a
-            mountainous, peaceful county where I used to wander as all those ancient Chinese poets did. I was then
-            fascinated by the nature for the first time during star-counting and daydreaming, long before I picked up
-            any physics formula. I have inevitably become a shutterbug (my <b><u><a
-                        href='https://ptgcliu.myportfolio.com/work'>Adobe Portfolio</a></u></b>) and could never stop
-            reading, wandering, and writing. Drop by my <b><a href="/Gallery">Gallery</a></b>!
+            My journey began in <b><a href='https://en.wikipedia.org/wiki/Xinchang_County'>Xinchang (新昌)</a></b>, a
+            serene mountainous county in China, where I spent countless hours wandering ancient paths that once inspired
+            classical poets. It was there, beneath star-filled skies, that I first experienced the profound wonder of
+            the cosmos, long before I encountered my first physics equation. Those early moments of stargazing and
+            contemplation ignited a lifelong passion for understanding our place in the universe.
+        </p>
+        <p>
+            This deep connection to both natural beauty and scientific inquiry has shaped who I am today. I remain an
+            avid photographer (visit my
+            <a href='https://ptgcliu.myportfolio.com/work'><b><u>Adobe Portfolio</u></b></a>
+            ). Explore my <a href="/Gallery"><b>Gallery</b></a> to see how this artistic perspective enriches
+            my scientific work.
         </p>
     </div>
 </div>

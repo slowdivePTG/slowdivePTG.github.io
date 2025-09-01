@@ -8,8 +8,6 @@ title:     Research
 
 ## Helium-shell Double Detonation Supernovae
 
-***Advisor: [Adam A. Miller](https://www.amillerastro.com)***
-
 The detonation of a helium shell atop a sub-Chandrasekhar mass white dwarf (WD) is a promising mechanism to trigger Type Ia supernovae (SNe Ia). A sufficiently thin helium shell is expected to act only as a lighter - after triggering the SN, the shell itself is outshined by the Ni-56 synthesized in the bulk ejecta and is hardly observable, leading to normal events. The thin-shell helium double detonation is thus a popular scenario to explain normal SNe Ia. But if the helium shell is massive, the SN will gain some bizarre observational properties due to the radioactive elements synthesized in the shell. 
 
 ### A case study -- SN 2020jgb
@@ -31,8 +29,6 @@ These thick-shell events provide a unique sample to study double detonation SNe,
 
 ## Repeating Tidal Disruption Events
 
-***Advisor: [Enrico Ramirez-Ruiz](http://www.ucolick.org/~enrico/home.html)***
-
 Stars grazing supermassive black holes (SMBHs) on bound orbits may survive tidal disruption, causing periodic flares. Inspired by the recent discovery of the periodic nuclear transient ASASSN-14ko, a promising candidate for a repeating tidal disruption event (TDE), we study the tidal deformation of stars approaching SMBHs on eccentric orbits with both analytical and hydrodynamics methods. 
 
 ### Flare Structure
@@ -49,5 +45,5 @@ We find the flare structures of eccentric TDEs show a complicated dependence on 
 We suggest that the recurrent flares of ASASSN-14ko originate from an evolved star on a grazing, bound orbit around the SMBH. Future hydrodynamics simulations of multiple tidal interactions will enable realistic models on the individual flare structure and the evolution over multiple flares.
 
 > ***Publications***
-> - **C. Liu**, R.~Yarza, E.~Ramirez-Ruiz, *[Repeating Partial Tidal Encounters of Sun-like Stars Leading to their Complete Disruption](https://iopscience.iop.org/article/10.3847/1538-4357/ad9b0b)*, 2025, ApJ, 979, 40.
+> - **C. Liu**, R. Yarza, E. Ramirez-Ruiz, *[Repeating Partial Tidal Encounters of Sun-like Stars Leading to their Complete Disruption](https://iopscience.iop.org/article/10.3847/1538-4357/ad9b0b)*, 2025, ApJ, 979, 40.
 > - **C. Liu**, B. Mockler, E. Ramirez-Ruiz, et al., *[Tidal disruption events from eccentric orbits and lessons learned from the noteworthy ASASSN-14ko](https://iopscience.iop.org/article/10.3847/1538-4357/acafe1)*, 2023, ApJ, 944, 184.

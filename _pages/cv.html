@@ -1,11 +1,11 @@
 ---
-layout:    about
+layout: about
 permalink: "/cv"
-author:    Chang
-weight:    1
+author: Chang
+weight: 1
 menutitle: CV
-cover:     /assets/page/cover.jpg
-title:     Curriculum Vitae
+cover: /assets/page/cover.jpg
+title: Curriculum Vitae
 ---
 {% assign cv = site.data.cv[page.author] %}
 
@@ -13,7 +13,7 @@ title:     Curriculum Vitae
     <div class="title icon-library">
         <h2>Education</h2>
     </div>
-    {% for entry in cv.education %}   
+    {% for entry in cv.education %}
     <dl>
         <dt class="time">{{entry.time}}</dt>
         <dd>
@@ -93,4 +93,7 @@ title:     Curriculum Vitae
     <p>{{cv.profile}}</p>
 </div>
 
-<iframe src="//docs.google.com/viewer?url=https://slowdiveptg.github.io/cv/resume_cv.pdf?dl=0&amp;hl=en_US&amp;embedded=true" class="gde-frame" style="width:100%; height:800px; border: none;" scrolling="no"></iframe>
+<iframe
+    src="//docs.google.com/viewer?url=https://slowdiveptg.github.io/cv/resume_cv.pdf?dl=0&amp;hl=en_US&amp;embedded=true"
+    class="gde-frame" style="width:100%; height:800px; border: none;" scrolling="no">
+</iframe>

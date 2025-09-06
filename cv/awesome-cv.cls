@@ -90,6 +90,7 @@
 }
 \RequirePackage{longtable}
 \RequirePackage{array}
+\RequirePackage{needspace}
 
 % Add these before the command definition
 \setlength{\LTpre}{0pt}  % Space before longtable
@@ -682,6 +683,20 @@
 	}{%
 	\end{center}
 }
+
+% Define a new environment for publication items that matches cvitems formatting
+\newenvironment{cvpubitems}{%
+	\vspace{-4.0mm}
+	\begin{justify}
+	\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+		\setlength{\parskip}{0.5ex}
+		\renewcommand{\labelitemi}{\bullet}
+}{%
+	\end{itemize}
+	\end{justify}
+	\vspace{2mm}
+}
+
 % Define an entry of publications
 % Usage: \cvpub{<description>}
 \newcommand*{\cvpub}[1]{%
@@ -691,7 +706,16 @@
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
 		\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#1}}
 	\end{tabular*}%
+	\vspace{-2.0mm}
 }
+
+% Define a new command for individual publication items that can break across pages
+% Usage: \cvpubitem{<author>}{<co-author>}{<url>}{<title>}{<journal>}
+\newcommand*{\cvpubitem}[5]{%
+	\needspace{2\baselineskip}
+	\item \descriptionstyle{\cvsubpub{#1}{#2}{#3}{#4}{#5}}
+}
+
 % Define an entry of each publication
 % Usage: \cvsubpub{<author>}{<href>}{<title>}{<journal>}
 \newcommand*{\cvsubpub}[5]{%

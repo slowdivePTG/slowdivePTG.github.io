@@ -3,7 +3,7 @@ Chang:
     education:
         - time:             "09.2021 - "
           location:         "Northwestern University"
-          description:      "Graduate student"
+          description:      "PhD student"
         - time:             "09.2021 - 06.2023"
           location:         "Northwestern University"
           description:      "Master of Science"
@@ -11,6 +11,15 @@ Chang:
           location:         "Peking University"
           description:      "Bachelor of Science (Hon), Astronomy"
     employment:
+        - time:             "09.2021 -"
+          location:         "Evaston, IL, US"
+          company:          "Northwestern University"
+          position:         "PhD Student/Research Assistant"
+          responsibilities:
+            - "Searching for peculiar SNe Ia from double detonations of sub-Chandrasekhar-mass white dwarfs in ZTF"
+            - "Conducting the first systematic joint study of early light curves and late-time nebular spectra for SNe Ia"
+            - "Running spectroscopic follow-up and data reduction for the CIERA transient group"
+            - "Developing open-source softwares for precise data processing and analysis of supernova spectra"
         - time:             "09.2020 - 07.2021"
           location:         "Beijing, China"
           company:          "Peking University"
@@ -18,14 +27,14 @@ Chang:
           responsibilities:
             - "Searching for microlensing signals from free-floating stellar mass black holes in the Galactic disk"
         - time:             "09.2019 - 01.2020"
-          location:         "Santa Cruz, US"
+          location:         "Santa Cruz, CA, US"
           company:          "University of California, Santa Cruz"
           position:         "Undergraduate Research Intern"
           responsibilities:
             - "Using hydrodynamic simulations to model the mass transfer in ultra-compact white dwarf binaries"
             - "Modeling periodic nuclear transients with a repeating tidal disruption scenario"
         - time:             "06.2019 - 08.2019"
-          location:         "Pasadena, US"
+          location:         "Pasadena, CA, US"
           company:          "California Institute of Technology"
           position:         "Summer Undergraduate Research Fellowship (SURF)"
           responsibilities:

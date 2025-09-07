@@ -19,7 +19,11 @@
             {% assign title = my_page.title %}
             {% endif %}
             {% if title and my_page.visible != false %}
-            <a class="page-link" href="{{ my_page.url | absolute_url }}" title="{{ title }}">{{ title }}</a>
+                {% if title == "Gallery" %}
+                    <a class="page-link" href="https://ptgcliu.myportfolio.com" title="{{ title }}" target="_blank" rel="noopener">{{ title }}</a>
+                {% else %}
+                    <a class="page-link" href="{{ my_page.url | absolute_url }}" title="{{ title }}">{{ title }}</a>
+                {% endif %}
             {% endif %}
             {% endfor %}
     </div>

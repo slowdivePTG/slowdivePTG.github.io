@@ -4,6 +4,7 @@ permalink: "/Science"
 weight:    2
 menutitle: Science
 title:     Research
+visible:   false
 ---
 
 ## Helium-shell Double Detonation Supernovae

@@ -4,6 +4,7 @@ permalink: "/Gallery"
 weight:    100
 menutitle: Gallery
 title:     Photography & Writings
+visible:   true
 ---
 
 I am always fascinated by anything allowing me to <i>speak to myself</i> - all those *magical* and *pellucid* issues including **photography**, **classic & rock music** and **literature**. Some of my photos are posted on my **<u><a href = 'https://ptgcliu.myportfolio.com'> Adobe Portfolio</a></u>**. My new (non-academic and capricious) writings are posted below, including but not limited to travel journals and surrealistic thoughts.
@@ -45,46 +46,5 @@ I am always fascinated by anything allowing me to <i>speak to myself</i> - all t
     <img src="../assets/PKUEastGate.jpeg" alt="">
      <span class="pic_title">PKU East Gate</span>
     <span class="text">Haidian, Beijing, China</span>
-  </div>
-  <div class="container">
-    <img src="../assets/WestLake.jpeg" alt="">
-     <span class="pic_title">West Lake</span>
-    <span class="text">Hangzhou, Zhejiang, China</span>
-  </div>
-  <div class="container">
-    <img src="../assets/Caltech.jpeg" alt="">
-     <span class="pic_title">Caltech</span>
-    <span class="text">Pasadena, CA, US</span>
-  </div>
-  <div class="container">
-    <img src="../assets/Manhattan.jpeg" alt="">
-    <span class="pic_title">Manhattan Beach</span>
-    <span class="text">Manhattan Beach, CA, US</span>
-  </div>
-  <div class="container">
-    <img src="../assets/GriffithObservatory.jpeg" alt="">
-     <span class="pic_title">Griffith Observatory</span>
-    <span class="text">Los Angeles, CA, US</span>
-  </div>
-  <div class="container">
-    <img src="../assets/SantaCruz.jpeg" alt="">
-     <span class="pic_title">Santa Cruz Boardwalk</span>
-    <span class="text">Santa Cruz, CA, US</span>
-  </div>
-  <div class="container">
-    <img src="../assets/UCSCFarm1.jpeg" alt="">
-     <span class="pic_title">UCSC Farm</span>
-    <span class="text">Santa Cruz, CA, US</span>
-  </div>
-  <div class="container">
-    <img src="../assets/UCSCFarm3.jpeg" alt="">
-     <span class="pic_title">UCSC Farm</span>
-    <span class="text">Santa Cruz, CA, US</span>
-  </div>
-  <div class="container">
-    <img src="../assets/UCSCFarm2.jpeg" alt="">
-     <span class="pic_title">UCSC Sunset</span>
-    <span class="text">Santa Cruz, CA, US</span>
-  </div>
   </div>
 -->

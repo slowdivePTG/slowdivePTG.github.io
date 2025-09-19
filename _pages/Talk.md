@@ -13,11 +13,13 @@ title:     Talks and Posters
     class="gde-frame" style="width:100%; height:432px; border: none;" scrolling="no">
 </iframe>
 
-1. **One Hundred Years of Supernova Science** -- Stockholm University
+1. **Keck Science Meeting** -- University of California, Los Angeles
+- Los Angeles, CA, US (Sep 2025)
+2. **One Hundred Years of Supernova Science** -- Stockholm University
 - Saltsjöbaden, Sweden (Aug 2025)
-2. **Cosmic Lighthouses: Astrophysical and Cosmological Challenges with SNe Ia** -- University of Cambridge
+3. **Cosmic Lighthouses: Astrophysical and Cosmological Challenges with SNe Ia** -- University of Cambridge
 - Cambridge, UK (Jul 2025)
-3. **Special Seminar** -- University of California, Santa Cruz
+4. **Special Seminar** -- University of California, Santa Cruz
 - Santa Cruz, CA, US (Jun 2025)
 
 > - **C. Liu** 2026, thesis, in prep.

@@ -13,32 +13,36 @@ title:     Talks and Posters
     class="gde-frame" style="width:100%; height:432px; border: none;" scrolling="no">
 </iframe>
 
-1. **Keck Science Meeting** -- University of California, Los Angeles
+1. **Astronomy Tea Talk** -- California Institute of Technology
+- Pasadena, CA, US (Sep 2025)
+2. **Keck Science Meeting** -- University of California, Los Angeles
 - Los Angeles, CA, US (Sep 2025)
-2. **One Hundred Years of Supernova Science** -- Stockholm University
+3. **One Hundred Years of Supernova Science** -- Stockholm University
 - Saltsjöbaden, Sweden (Aug 2025)
-3. **Cosmic Lighthouses: Astrophysical and Cosmological Challenges with SNe Ia** -- University of Cambridge
+4. **Cosmic Lighthouses: Astrophysical and Cosmological Challenges with SNe Ia** -- University of Cambridge
 - Cambridge, UK (Jul 2025)
-4. **Special Seminar** -- University of California, Santa Cruz
+5. **Special Seminar** -- University of California, Santa Cruz
 - Santa Cruz, CA, US (Jun 2025)
 
 > - **C. Liu** 2026, thesis, in prep.
 
 <br />
 
-## A Morphological Star-Galaxy Classifier for DESI Legacy Surveys
+## Galaxy Morphological Classification and Spectral Decontamination
 <iframe
     src="//docs.google.com/viewer?url=https://slowdiveptg.github.io/assets/talk/StarGalaxy_slides.pdf?dl=0&amp;hl=en_US&amp;embedded=true"
     class="gde-frame" style="width:100%; height:432px; border: none;" scrolling="no">
 </iframe>
 
-1. **DESI Special Seminar** -- University California, Berkeley
+1. **Carnegie arXiv Tea** -- Carnegie Observatories
+- Pasadena, CA, US (Sep 2025)
+2. **DESI Special Seminar** -- University California, Berkeley
 - Berkeley, CA, US (Jun 2025)
-2. **LS4 Team Meeting** -- Northwestern University 
+3. **LS4 Team Meeting** -- Northwestern University 
 - Evanston, IL, US (Mar 2025)
 
-
 > - **C. Liu**, A. A. Miller, J. S. Bloom, et al., [PASP, 137, 084501.](https://iopscience.iop.org/article/10.1088/1538-3873/adf7db)
+> - **C. Liu** and A. A. Miller, [arXiv:2508.15278.](https://arxiv.org/abs/2508.15278)
 
 <br />
 
@@ -64,7 +68,6 @@ title:     Talks and Posters
 - Evanston, IL, US (Oct 2022)
 8. **Astro-Coffee** -- Princeton University
 - Princeton, NJ, US (Sep 2022)
-
 
 > - **C. Liu**, A. A. Miller, S. J. Boos, et al., [2023, ApJ, 958, 178.](https://iopscience.iop.org/article/10.3847/1538-4357/acffc9)
 > - **C. Liu**, A. A. Miller, A. Polin, et al., [2023, ApJ, 946, 83.](https://iopscience.iop.org/article/10.3847/1538-4357/acbb5e/meta)
@@ -96,23 +99,12 @@ title:     Talks and Posters
 4. **Transients from Space** -- Space Telescope Science Institute
 - Baltimore, MD, US (Mar 2025)
 
-> - **C. Liu** and A. A. Miller, [arXiv:2508.15278.](https://arxiv.org/abs/2508.15278)
-
-<br />
-
 ## A Morphological Star-Galaxy Classifier for DESI Legacy Surveys
 1. **Open SkAI 2025** -- The SkAI Institute
 - Chicago, IL, US (Sep 2025)
-
-> - **C. Liu**, A. A. Miller, J. S. Bloom, et al., [PASP, 137, 084501.](https://iopscience.iop.org/article/10.1088/1538-3873/adf7db)
-
-<br />
 
 ## Uncovering Peculiar Double-Detonation Type Ia Supernovae
 1. **Rise_Time 2024** -- Purdue University
 - West Lafayette, IN, US (Aug 2024)
 2. **Keck Science Meeting** -- University of California, Berkeley
 - Berkeley, CA, US (Sep 2023)
-
-> - **C. Liu**, A. A. Miller, S. J. Boos, et al., [2023, ApJ, 958, 178.](https://iopscience.iop.org/article/10.3847/1538-4357/acffc9)
-> - **C. Liu**, A. A. Miller, A. Polin, et al., [2023, ApJ, 946, 83.](https://iopscience.iop.org/article/10.3847/1538-4357/acbb5e/meta)

@@ -5,7 +5,7 @@
     margin: 0 auto 50px auto;
     max-width: 800px;
     border-radius: 12px;
-    background: #ffffff;
+    background: #fafbfc; // Light gray, slightly lighter than body background
     transition: all 0.3s ease;
     transform: translateY(0);
     border: 1px solid rgba(0,0,0,0.05);
@@ -36,6 +36,10 @@
 
     dl {
         margin: 0;
+        
+        &:first-of-type {
+            margin-top: 25px; // Add spacing after the Education title
+        }
     }
 
     dt.time {
@@ -346,4 +350,15 @@
     .md-card:hover & {
         animation: pulse 1s ease-in-out;
     }
+}
+
+// Reusable badge styling - eliminates need for inline styles
+.badge {
+    height: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+    display: inline !important;
+    width: auto !important;
+    border-radius: 0 !important;
+    cursor: default !important;
 }

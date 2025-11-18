@@ -144,6 +144,93 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Auto-wrap H2 sections in cards for markdown pages
+    function wrapH2SectionsInCards() {
+        console.log('[Card Wrapper] Starting...');
+        console.log('[Card Wrapper] Current pathname:', window.location.pathname);
+        
+        // Only apply to pages that have markdown content (not index.html or CV page)
+        // Check if we're on the actual home page by looking for index-profile-container
+        if (document.querySelector('.index-profile-container')) {
+            console.log('[Card Wrapper] Skipping - home page detected');
+            return; // Skip for home page which already has custom cards
+        }
+        
+        // Skip CV page which has its own card layout
+        const pathname = window.location.pathname.toLowerCase();
+        if (pathname.includes('/cv')) {
+            console.log('[Card Wrapper] Skipping - CV page detected');
+            return;
+        }
+        
+        const content = document.querySelector('.post-content');
+        console.log('[Card Wrapper] Content element:', content);
+        
+        if (!content) {
+            console.log('[Card Wrapper] No post-content element found, aborting');
+            return;
+        }
+        
+        const h2Elements = content.querySelectorAll('h2');
+        console.log('[Card Wrapper] Found H2 elements:', h2Elements.length);
+        
+        h2Elements.forEach(function(h2, index) {
+            console.log(`[Card Wrapper] Processing H2 #${index}:`, h2.textContent);
+            
+            // Skip if already inside a card
+            if (h2.closest('.md-card')) {
+                console.log(`[Card Wrapper] H2 #${index} already in card, skipping`);
+                return;
+            }
+            
+            // Create card wrapper
+            const card = document.createElement('div');
+            card.className = 'md-card shadow';
+            card.style.textAlign = 'left';
+            
+            // Create title section with appropriate icon
+            const titleDiv = document.createElement('div');
+            
+            // Get icon from data-icon attribute, or use default
+            const iconClass = h2.getAttribute('data-icon') || 'icon-briefcase';
+            
+            titleDiv.className = `title ${iconClass}`;
+            
+            // Move h2 into title div
+            const h2Clone = h2.cloneNode(true);
+            titleDiv.appendChild(h2Clone);
+            card.appendChild(titleDiv);
+            
+            // Create content section
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'content';
+            
+            // Collect all elements until next h2, h1, or end of content
+            let nextElement = h2.nextElementSibling;
+            const elementsToMove = [];
+            
+            while (nextElement && nextElement.tagName !== 'H2' && nextElement.tagName !== 'H1') {
+                elementsToMove.push(nextElement);
+                nextElement = nextElement.nextElementSibling;
+            }
+            
+            // Move collected elements to content div
+            elementsToMove.forEach(function(element) {
+                contentDiv.appendChild(element);
+            });
+            
+            card.appendChild(contentDiv);
+            
+            // Replace original h2 with card
+            h2.parentNode.insertBefore(card, h2);
+            h2.remove();
+            
+            console.log(`[Card Wrapper] H2 #${index} wrapped successfully`);
+        });
+        
+        console.log('[Card Wrapper] Finished processing all H2 elements');
+    }
+
     // Performance optimization: only run animations if user hasn't specified reduced motion
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         initCardInteractions();
@@ -153,6 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initAudioSymbol();
     initSmoothScrolling();
     initImageLoadingEffects();
+    wrapH2SectionsInCards();
 
     // Add some Easter eggs for fun
     let clickCount = 0;
@@ -172,4 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Animations toggled!');
         }
     });
+    
+    // Initialize card wrapping for markdown pages
+    wrapH2SectionsInCards();
 });

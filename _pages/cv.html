@@ -10,7 +10,7 @@ title: Curriculum Vitae
 {% assign cv = site.data.cv[page.author] %}
 
 <div class="md-card shadow education">
-    <div class="title icon-library">
+    <div class="title icon-user-tie">
         <h2>Education</h2>
     </div>
     {% for entry in cv.education %}
@@ -24,7 +24,10 @@ title: Curriculum Vitae
     {% endfor %}
 </div>
 
-</br>
+<div class="content">
+    <hr class="section-divider">
+</div>
+
 <h2 class="employment-heading">Research Experience</h2>
 
 <div class="timeline-container">
@@ -88,6 +91,10 @@ title: Curriculum Vitae
 </div>
 {% endfor %}-->
 
+<div class="content">
+    <hr class="section-divider">
+</div>
+
 <h2 class="project-heading"></br>PDF Version</h2>
 <p>{{cv.profile}}</p>
 
@@ -95,3 +102,7 @@ title: Curriculum Vitae
     src="//docs.google.com/viewer?url=https://slowdiveptg.github.io/cv/resume_cv.pdf?dl=0&amp;hl=en_US&amp;embedded=true"
     class="gde-frame" style="width:100%; height:800px; border: none;" scrolling="no">
 </iframe>
+
+<div class="content">
+    <hr class="section-divider">
+</div>

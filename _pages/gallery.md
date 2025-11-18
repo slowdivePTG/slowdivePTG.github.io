@@ -1,6 +1,6 @@
 ---
 layout:    page
-permalink: "/Gallery"
+permalink: "/gallery"
 weight:    100
 menutitle: Gallery
 title:     Photography & Writings

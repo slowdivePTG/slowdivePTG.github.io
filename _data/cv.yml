@@ -1,5 +1,5 @@
 Chang:
-    profile: "Below is a PDF version of my CV (last updated on Oct 2025). You can also download it <a href='https://slowdiveptg.github.io/cv/resume_cv.pdf' target='_blank'>here</a>."
+    profile: "Below is a PDF version of my CV (last updated on Nov 2025). You can also download it <a href='https://slowdiveptg.github.io/cv/resume_cv.pdf' target='_blank'>here</a>."
     education:
         - time:             "09.2021 - "
           location:         "Northwestern University"
@@ -18,7 +18,6 @@ Chang:
           responsibilities:
             - "Searching for peculiar SNe Ia from double detonations of sub-Chandrasekhar-mass white dwarfs in ZTF"
             - "Conducting the first systematic joint study of early light curves and late-time nebular spectra for SNe Ia"
-            - "Running spectroscopic follow-up and data reduction for the CIERA transient group"
             - "Developing open-source softwares for precise data processing and analysis of supernova spectra"
         - time:             "09.2020 - 07.2021"
           location:         "Beijing, China"

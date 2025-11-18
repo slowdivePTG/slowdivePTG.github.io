@@ -61,7 +61,7 @@ img {
 }
 
 // Micro-interactions for buttons and links
-button, .page-link {
+button {
     cursor: pointer;
     user-select: none;
     
@@ -69,6 +69,8 @@ button, .page-link {
         transform: scale(0.98);
     }
 }
+
+// Enhanced page-link interactions are handled in main.scss
 
 // Responsive animation adjustments
 @media (max-width: 768px) {

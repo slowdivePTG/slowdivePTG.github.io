@@ -19,6 +19,7 @@ body {
     font-feature-settings: 'kern' 1;
     text-rendering: geometricPrecision;
     text-align: center;
+    background-color: #f5f7fa; // Elegant light gray background
 }
 
 ::-moz-selection {
@@ -81,7 +82,7 @@ a {
     }
     
     // Special hover effect for links in content
-    &:not(.page-link):not(.icon-mail):not(.icon-github) {
+    &:not(.page-link):not(.icon-mail):not(.icon-github):not(.title-link) {
         &::after {
             content: '';
             position: absolute;
@@ -97,6 +98,24 @@ a {
             width: 100%;
         }
     }
+    
+    // Remove underline effect from links containing badge images
+    &:has(img.badge) {
+        &::after {
+            display: none !important;
+        }
+    }
+}
+
+// Reusable badge styling for shields.io badges
+.badge {
+    height: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+    display: inline !important;
+    width: auto !important;
+    border-radius: 0 !important;
+    cursor: default !important;
 }
 
 p,

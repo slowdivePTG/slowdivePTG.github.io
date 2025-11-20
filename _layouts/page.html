@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<a href="{{ "/" | absolute_url }}" class="logo-readium"><span class="logo">{% if site.data.authors[0] %}{{ site.data.authors[0].initial | slice: 0, 2 | downcase }}{% else %}cl{% endif %}</span></a>
+
 <main class="content" role="main">
     <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
         <header class="post-header short-diver">

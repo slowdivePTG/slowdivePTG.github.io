@@ -4,11 +4,14 @@
 {% assign cover = site.cover %}
 {% endif %}
 
-<header class="main-header detail-page image-bg {% if cover %} has-cover" style="background-image: url({{ cover | absolute_url }})" {% else %} no-cover" {% endif %}>
+{% if cover %}
+<div class="author-cover image-bg" style="background-image: url('{{ cover | absolute_url }}')"></div>
+{% endif %}
+
+<header class="main-header detail-page {% if cover %} has-cover {% else %} no-cover {% endif %}">
     <h1 class="page-title"><a class="title-link" href="{{ "/" | absolute_url }}" title="{{ site.title }}">{{ site.title }}</a></h1>
     <h2 class="page-description">{{ site.subtitle }}</h2>
     <div class="nav">
-            <a class="page-link" href="{{ "/" | absolute_url }}" title="Home">Home</a>
 
             {% assign pages = site.pages | sort:"weight"  %}
             {% for my_page in pages %}

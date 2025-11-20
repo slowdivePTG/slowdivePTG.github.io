@@ -4,6 +4,7 @@ permalink: "/research"
 weight:    2
 menutitle: Research
 title:     Research
+cover:     'assets/page/cover_gemini.png'
 ---
 
 <h1>Tidal Disruption Events</h1>
@@ -76,9 +77,9 @@ A powerful new framework (powered by JAX) for precise host-galaxy subtraction in
 
 <h2 data-icon="icon-briefcase">BayeSpecFit: Fitting Blended Spectral Features in Supernovae</h2>
 
-A Bayesian framework for fitting blended spectral features in SN spectra (powered by PyMC), using a combination of physical priors and flexible line profiles to robustly decompose complex absorption features and extract accurate velocity and equivalent width measurements.
-
 <a href="https://github.com/slowdivePTG/BayeSpecFit.git"><img src="https://img.shields.io/badge/GitHub-Repo-blue?logo=github" alt="GitHub" class="badge"></a>
+
+A Bayesian framework for fitting blended spectral features in SN spectra (powered by PyMC), using a combination of physical priors and flexible line profiles to robustly decompose complex absorption features and extract accurate velocity and equivalent width measurements.
 
 ***Publications***
 - L. A. Kwok, **C. Liu**, S. W. Jha, et al., [2025, arXiv:2510.09760.](https://arxiv.org/abs/2510.09760)

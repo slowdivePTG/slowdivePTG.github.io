@@ -1,7 +1,7 @@
 Chang:                                                        # Fallback if nothing is specified
   initial:      Cliu                                          # used for author lookup in posts and for first two characters in the about page back button
   name:         "Chang Liu"                                   # used to display author name
-  cover:        /assets/page/cover.jpg                        # OPTIONAL: defines location of cover image in about page
+  cover:        /assets/page/cover_gemini.png                 # OPTIONAL: defines location of cover image in about page
   picture:      /assets/page/chang_cover.jpg                  # OPTIONAL: author picture
   bio:                                                        # OPTIONAL: text below author name in posts
   location:                                                   # OPTIONAL: used to display location of the author

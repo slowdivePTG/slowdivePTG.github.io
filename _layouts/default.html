@@ -24,7 +24,5 @@ layout: compress
 
 {% include photoswipe.html %}
 {% include post_scripts.html %}
-<script src="http://localhost:4000/js/photoswipe-ui-default.js"></script>
-<script src="http://localhost:4000/js/post.js"></script>
-<script type="text/javascript" src="http://localhost:4000/js/global.js"></script>
+<script type="text/javascript" src="{{ "/js/global.js" | absolute_url }}"></script>
 </html>

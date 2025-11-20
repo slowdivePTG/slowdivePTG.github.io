@@ -7,16 +7,24 @@ layout: compress
 
 <body class="home-template">
     <div class="site-wrapper">
-        {% include header.html %}
+        {% if page.layout == 'default' and page.cover %}
+            {% include header-home.html %}
+        {% else %}
+            {% include header.html %}
+        {% endif %}
         {{ content }}
+        {% if page.url != "/" %}
         <footer class="post-footer">
             {% include authorinfo.html param=page.author %}
         </footer>
         {% include footer.html %}
+        {% endif %}
     </div>
 </body>
 
 {% include photoswipe.html %}
 {% include post_scripts.html %}
-{% include global.html %}
+<script src="http://localhost:4000/js/photoswipe-ui-default.js"></script>
+<script src="http://localhost:4000/js/post.js"></script>
+<script type="text/javascript" src="http://localhost:4000/js/global.js"></script>
 </html>

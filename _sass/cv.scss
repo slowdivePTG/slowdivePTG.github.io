@@ -260,7 +260,7 @@
 }
 
 @media only print {
-    .author-cover, .author-image, .author-meta, .logo-readium, .author-bio,
+    .author-meta, .logo-readium,
     .timeline-block > .time, .marker, .timeline-container:before, .go-to-top,
     .icon-briefcase, .site-footer {
         display: none !important;

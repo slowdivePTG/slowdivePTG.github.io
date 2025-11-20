@@ -2,6 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
+    // All hero section scroll effects have been removed for a static homepage.
+    
     // Audio Pronunciation Button
     function initAudioSymbol() {
         const audioBtn = document.getElementById('pronunciation-btn');
@@ -241,8 +243,10 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initImageLoadingEffects();
     wrapH2SectionsInCards();
+    // initHeroScrollEffects(); // This is no longer needed
 
-    // Add some Easter eggs for fun
+    // Remove the Easter eggs and keyboard shortcuts for simplification
+    /*
     let clickCount = 0;
     document.addEventListener('click', function() {
         clickCount++;
@@ -252,15 +256,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Add keyboard shortcuts
     document.addEventListener('keydown', function(e) {
-        // Alt + A for "animations toggle"
         if (e.altKey && e.key === 'a') {
             document.body.classList.toggle('animations-disabled');
             console.log('Animations toggled!');
         }
     });
+    */
     
-    // Initialize card wrapping for markdown pages
-    wrapH2SectionsInCards();
 });

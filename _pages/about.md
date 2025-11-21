@@ -12,13 +12,9 @@ cover:     'assets/page/cover_gemini.png'
         <h2>Who Am I?</h2>
     </div>
     <div class="content">
-        <p>I am a time-domain astronomer at
-            <a href='https://ciera.northwestern.edu/directory/chang-liu/'>
-                <b>
-                    <font color='4E2A84'>Northwestern University</font>
-                </b>
-            </a>,
-            where I work with Prof. Adam Miller to unravel the mysteries of the transient universe with data science.
+        <p>I am a PhD candidate at <b>Northwestern University</b> 
+            in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a>
+            , where I work with Prof. Adam Miller to decode the transient universe with data science.
             My thesis focuses on the demographics of Type Ia supernovae (SNe Ia),
             the cosmic candles that illuminate our understanding of dark energy.
         </p>

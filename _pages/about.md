@@ -12,11 +12,10 @@ cover:     'assets/page/cover_gemini.png'
         <h2>Who Am I?</h2>
     </div>
     <div class="content">
-        <p>I am a PhD candidate at <b>Northwestern University</b> 
-            in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a>
-            , where I work with Prof. Adam Miller to decode the transient universe with data science.
-            My thesis focuses on the demographics of Type Ia supernovae (SNe Ia),
-            the cosmic candles that illuminate our understanding of dark energy.
+        <p>
+            I am a PhD candidate at <b>Northwestern University</b> in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a>, where I work with Prof. Adam Miller to decode the transient universe using data science.
+            My thesis focuses on the demographics of Type Ia supernovae (SNe Ia) — the 
+            cosmic candles that illuminate our understanding of dark energy.
         </p>
     </div>
 </div>
@@ -26,26 +25,20 @@ cover:     'assets/page/cover_gemini.png'
     </div>
     <div class="content">
         <p>
-            My research leverages advanced statistical and data science methodologies to analyze
-            vast datasets from time-domain surveys alongside observations from world-class telescopes,
-            uncovering subtle patterns and correlations that reveal the underlying physics driving these events.
-            With a primary focus on transient phenomena,
-            my research spans theory, observation, machine learning, and software.
+            My research leverages advanced statistical and data science methodologies to analyze vast datasets from time-domain surveys alongside observations from world-class telescopes, uncovering subtle patterns and correlations that reveal the underlying physics of these events.
+            With a primary focus on transient phenomena, my work spans theory, observation, machine learning, and software development.
         </p>
     </div>
 </div>
 <div class="md-card shadow" style="text-align:left;">
     <div class="title icon-location">
-        <h2>Where Did I Come From?</h2>
+        <h2>Where Do I Come From?</h2>
     </div>
     <div class="content">
         <p>
-            My journey began in <b><a href='https://en.wikipedia.org/wiki/Xinchang_County'>Xinchang (新昌)</a></b>,
-            a serene mountainous county in China,
-            where I spent countless hours wandering ancient paths that once inspired classical poets.
-            It was there, beneath star-filled skies, that I first experienced the profound wonder of the cosmos,
-            long before I encountered my first physics equation.
-            As a <a href="https://ptgcliu.myportfolio.com"><b>photographer</b></a>, I carry forward that same wonder that first drew me to the stars.
+            My journey began in <b><a href='https://en.wikipedia.org/wiki/Xinchang_County'>Xinchang (新昌)</a></b>, a serene mountainous county in China, where I spent countless hours wandering ancient paths that once inspired classical poets. 
+            It was there, beneath star-filled skies, that I first experienced the profound wonder of the cosmos, long before I encountered my first physics equation.
+            As a <a href="https://ptgcliu.myportfolio.com"><b>photographer</b></a>, I carry forward the same sense of wonder that first drew me to the stars.
         </p>
     </div>
 </div>

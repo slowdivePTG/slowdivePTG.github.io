@@ -15,7 +15,9 @@ layout: compress
         {{ content }}
         {% if page.url != "/" %}
         <footer class="post-footer">
+            {% unless page.url == "/cv" %}
             {% include authorinfo.html param=page.author %}
+            {% endunless %}
         </footer>
         {% include footer.html %}
         {% endif %}

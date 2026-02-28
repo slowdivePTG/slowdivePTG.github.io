@@ -13,9 +13,10 @@ cover:     'assets/page/cover_gemini.png'
     </div>
     <div class="content">
         <p>
-            I am a PhD candidate at <b>Northwestern University</b> in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a>, where I work with Prof. Adam Miller to decode the transient universe using data science.
-            My thesis focuses on the demographics of Type Ia supernovae (SNe Ia) — the 
-            cosmic candles that illuminate our understanding of dark energy.
+            I am currently a PhD candidate at <b>Northwestern University</b>, working in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a> under the guidance of Prof. Adam A. Miller. My research centers on unraveling the mysteries of the transient universe through data science, with a particular emphasis on the demographics of Type Ia supernovae (SNe Ia) -- the cosmic candles that help illuminate the nature of dark energy.
+        </p>
+        <p>
+            In Oct 2026, I will join <b>University of Oxford</b> as a Hintze Fellow at the Hintze Centre for Astrophysical Surveys. There, I will continue to investigate transient phenomena and contribute to pioneering astronomical surveys, including the Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST).
         </p>
     </div>
 </div>

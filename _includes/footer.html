@@ -14,21 +14,34 @@
 <!-- Silent Tracking Script -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Fire-and-forget fetch call to track the visitor
-        // We use mode: 'cors' to ensure the browser allows the cross-origin request
-        fetch("https://visitor-mapper.onrender.com/api/track", {
-            method: "GET",
-            mode: "cors", 
-            cache: "no-store"
-        })
-        .then(response => {
-            // Silently succeeds, map iframe will update on next page load
-            console.debug("Visitor tracked successfully.");
-        })
-        .catch(error => {
-            // Silently fails without breaking the user experience
-            console.error("Failed to track visitor:", error);
-        });
+        const trackKey = "visitor_tracked_timestamp";
+        const now = Date.now();
+        const lastTracked = localStorage.getItem(trackKey);
+        
+        // 24 hours in milliseconds = 86400000
+        const cooldownPeriod = 86400000;
+
+        // Only send a tracking request if they haven't been tracked in the last 24 hours
+        if (!lastTracked || (now - parseInt(lastTracked)) > cooldownPeriod) {
+            // Fire-and-forget fetch call to track the visitor
+            fetch("https://visitor-mapper.onrender.com/api/track", {
+                method: "GET",
+                mode: "cors", 
+                cache: "no-store"
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Save the timestamp so we don't track them again today
+                    localStorage.setItem(trackKey, now.toString());
+                    console.debug("Visitor tracked successfully.");
+                }
+            })
+            .catch(error => {
+                console.error("Failed to track visitor:", error);
+            });
+        } else {
+            console.debug("Visitor already tracked recently. Skipping.");
+        }
     });
 </script>
 <div class="author-meta">

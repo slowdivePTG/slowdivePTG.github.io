@@ -1,3 +1,36 @@
+<!-- VISITOR TRACKER & MAP -->
+<div class="visitor-map-container" style="width: 100%; max-width: 800px; margin: 2rem auto; text-align: center;">
+    <!-- The iframe displaying the map -->
+    <iframe 
+        src="https://visitor-mapper.onrender.com/map" 
+        width="100%" 
+        height="400px" 
+        style="border: none; background: transparent;" 
+        title="Live Visitor Map"
+        allowtransparency="true"
+        loading="lazy">
+    </iframe>
+</div>
+<!-- Silent Tracking Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Fire-and-forget fetch call to track the visitor
+        // We use mode: 'cors' to ensure the browser allows the cross-origin request
+        fetch("https://visitor-mapper.onrender.com/api/track", {
+            method: "GET",
+            mode: "cors", 
+            cache: "no-store"
+        })
+        .then(response => {
+            // Silently succeeds, map iframe will update on next page load
+            console.debug("Visitor tracked successfully.");
+        })
+        .catch(error => {
+            // Silently fails without breaking the user experience
+            console.error("Failed to track visitor:", error);
+        });
+    });
+</script>
 <div class="author-meta">
     <a href="mailto:ptg.cliu@u.northwestern.edu" itemprop="email" class="icon-mail">Mail</a>
     <a href="https://github.com/slowdivePTG" itemprop="sameAs" class="icon-github">Github</a>

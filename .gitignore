@@ -188,7 +188,5 @@ orcid-ID.png
 # *.cls (commented out - you need awesome-cv.cls)
 # *.bst (commented out - might be needed for bibliography)
 
-# SDSS catalog
-galSpec*.fits
-
-SN2022an/
+# My own visitor mapper
+visitor_map/

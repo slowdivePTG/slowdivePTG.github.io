@@ -18,10 +18,10 @@
         const now = Date.now();
         const lastTracked = localStorage.getItem(trackKey);
         
-        // 24 hours in milliseconds = 86400000
-        const cooldownPeriod = 86400000;
+        // 1 hour in milliseconds = 3600000
+        const cooldownPeriod = 3600000;
 
-        // Only send a tracking request if they haven't been tracked in the last 24 hours
+        // Only send a tracking request if they haven't been tracked in the last 1 hour
         if (!lastTracked || (now - parseInt(lastTracked)) > cooldownPeriod) {
             // Fire-and-forget fetch call to track the visitor
             fetch("https://visitor-mapper.onrender.com/api/track", {

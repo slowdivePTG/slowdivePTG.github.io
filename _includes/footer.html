@@ -41,7 +41,7 @@
             >
                 Chang Liu 刘畅
             </p>
-            <p style="margin: 0;  font-size: 0.9em">
+            <p style="margin: 0; font-size: 0.9em">
                 PhD Candidate<br />
                 CIERA/Northwestern
             </p>
@@ -62,7 +62,6 @@
                     align-items: center;
                     gap: 2px;
                     font-size: 0.9em;
-                    
                     text-decoration: none;
                 "
                 >Mail</a
@@ -78,7 +77,6 @@
                     align-items: center;
                     gap: 2px;
                     font-size: 0.9em;
-                    
                     text-decoration: none;
                 "
                 >GitHub</a
@@ -96,7 +94,6 @@
                     align-items: center;
                     gap: 2px;
                     font-size: 0.9em;
-                    
                     text-decoration: none;
                 "
                 >ADS</a
@@ -118,10 +115,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: relative;
             "
         >
             <iframe
-                src="https://visitor-mapper.onrender.com/map"
+                id="visitor-map"
+                src="about:blank"
                 width="100%"
                 height="100%"
                 style="
@@ -129,10 +128,10 @@
                     background: transparent;
                     display: block;
                     margin: 0;
+                    transition: opacity 0.5s ease-in-out;
                 "
                 title="Live Visitor Map"
                 allowtransparency="true"
-                loading="lazy"
                 scrolling="no"
             >
             </iframe>
@@ -142,33 +141,93 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const trackKey = "visitor_tracked_timestamp";
-        const now = Date.now();
-        const lastTracked = localStorage.getItem(trackKey);
+        const iframe = document.getElementById("visitor-map");
 
-        // 1 hour in milliseconds = 3600000
-        const cooldownPeriod = 3600000;
+        // Helper to check dark mode
+        function checkIsDark() {
+            const dataTheme =
+                document.documentElement.getAttribute("data-theme");
+            if (dataTheme) {
+                return dataTheme === "dark";
+            }
+            return (
+                window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+            );
+        }
 
-        // Only send a tracking request if they haven't been tracked in the last 1 hour
-        if (!lastTracked || now - parseInt(lastTracked) > cooldownPeriod) {
-            // Fire-and-forget fetch call to track the visitor
+        const currentTheme = checkIsDark() ? "dark" : "light";
+        let isLive = false;
+        let isCachedLoaded = false;
+
+        // MutationObserver to watch for theme changes
+        const observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                if (
+                    mutation.type === "attributes" &&
+                    mutation.attributeName === "data-theme"
+                ) {
+                    const isDark = checkIsDark();
+                    if (iframe.contentWindow) {
+                        iframe.contentWindow.postMessage(
+                            { theme: isDark ? "dark" : "light" },
+                            "*",
+                        );
+                    }
+                }
+            });
+        });
+
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ["data-theme"],
+        });
+
+        function bootLiveMap() {
+            if (isLive) return; // Stop retrying if already live
+
+            // Set a strict 0.5-second timeout for the fetch
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 500);
+
             fetch("https://visitor-mapper.onrender.com/api/track", {
                 method: "GET",
                 mode: "cors",
                 cache: "no-store",
+                signal: controller.signal
             })
                 .then((response) => {
+                    clearTimeout(timeoutId);
                     if (response.ok) {
-                        // Save the timestamp so we don't track them again today
-                        localStorage.setItem(trackKey, now.toString());
-                        console.debug("Visitor tracked successfully.");
+                        const currentTheme = checkIsDark() ? "dark" : "light";
+                        // Swap the iframe src to the live map with theme
+                        iframe.src = `https://visitor-mapper.onrender.com/map?theme=${currentTheme}`;
+                        isLive = true; // Mark as successful
+                        console.log("Live visitor map feed connected.");
+                    } else {
+                        throw new Error("Network response was not ok.");
                     }
                 })
                 .catch((error) => {
-                    console.error("Failed to track visitor:", error);
+                    clearTimeout(timeoutId);
+                    // Only load the cached map if we haven't already
+                    if (!isCachedLoaded) {
+                        console.error(
+                            "Live map feed offline, falling back to cached map.",
+                            error,
+                        );
+                        const currentTheme = checkIsDark() ? "dark" : "light";
+                        iframe.src = `/assets/cached-map.html?theme=${currentTheme}`;
+                        isCachedLoaded = true;
+                    }
+
+                    // Retry every 5 seconds
+                    setTimeout(bootLiveMap, 5000);
                 });
-        } else {
-            console.debug("Visitor already tracked recently. Skipping.");
         }
+
+        // Wait a tiny bit (0.3s) to let the page settle before fetching,
+        // this guarantees the static globe only appears if the backend is genuinely asleep or dead.
+        setTimeout(bootLiveMap, 300);
     });
 </script>

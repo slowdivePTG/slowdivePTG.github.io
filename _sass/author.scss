@@ -13,29 +13,65 @@
     left: 20px;
     width: 50px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--color-bg); opacity: 0.9;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-hr);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px var(--color-kbd-shadow);
     
     &:hover {
-        background: rgba(255, 255, 255, 1);
+        background: var(--color-bg); opacity: 1;
         transform: scale(1.1);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 12px var(--color-kbd-shadow);
     }
     
     .logo {
         font-size: 18px;
         font-weight: bold;
         text-transform: uppercase;
-        color: #333;
+        color: var(--color-text-normal);
         text-decoration: none;
+    }
+}
+
+// Theme toggle button
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--color-bg);
+    opacity: 0.9;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--color-hr);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px var(--color-kbd-shadow);
+    cursor: pointer;
+    
+    &:hover {
+        background: var(--color-bg);
+        opacity: 1;
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px var(--color-kbd-shadow);
+    }
+    
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--color-text-normal);
+        transition: transform 0.3s ease;
     }
 }

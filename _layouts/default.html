@@ -7,11 +7,6 @@ layout: compress
 
 <body class="home-template">
     <div class="site-wrapper">
-        {% if page.layout == 'default' and page.cover %}
-            {% include header-home.html %}
-        {% else %}
-            {% include header.html %}
-        {% endif %}
         {{ content }}
         {% if page.url != "/" %}
         <footer class="post-footer">

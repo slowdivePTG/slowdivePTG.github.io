@@ -5,13 +5,13 @@ cover: 'assets/page/cover_gemini.png'
 
 <!-- Full-screen hero section with background image -->
 <div class="hero-section" id="hero-section">
-    <div class="hero-background" style="background-image: url({{ page.cover | absolute_url }});"></div>
+    <div class="hero-background" style="background-image: url({{ page.cover | relative_url }});"></div>
     <div class="hero-content">
         <!-- Profile container -->
         <div class="index-profile-container">
             <div class="profile-main">
                 <div class="index-profile-image">
-                    <img src="{{ '/assets/page/chang_cover.jpg' | absolute_url }}" alt="Chang Liu" />
+                    <img src="{{ '/assets/page/chang_cover.jpg' | relative_url }}" alt="Chang Liu" />
                 </div>
                 <div class="profile-details">
                     <div class="index-profile-info">
@@ -42,7 +42,7 @@ cover: 'assets/page/cover_gemini.png'
                             {% if title == "Gallery" %}
                                 <a class="nav-link" href="https://ptgcliu.myportfolio.com" title="{{ title }}" target="_blank" rel="noopener">{{ title }}</a>
                             {% else %}
-                                <a class="nav-link" href="{{ my_page.url | absolute_url }}" title="{{ title }}">{{ title }}</a>
+                                <a class="nav-link" href="{{ my_page.url | relative_url }}" title="{{ title }}">{{ title }}</a>
                             {% endif %}
                         {% endif %}
                         {% endfor %}

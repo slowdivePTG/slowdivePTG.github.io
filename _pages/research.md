@@ -4,7 +4,6 @@ permalink: "/research"
 weight:    2
 menutitle: Research
 title:     Research
-cover:     'assets/page/cover_gemini.png'
 ---
 
 <h1>Tidal Disruption Events</h1>

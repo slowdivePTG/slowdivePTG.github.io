@@ -25,10 +25,20 @@
     <link rel="stylesheet" href="{{ "/css/screen.css" | absolute_url }}?v={{ site.time | date: '%s' }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url  }}">
 
-    <!-- https://github.com/joshbuchea/HEAD -->
-    <!-- <link rel="icon" href="{{ "/http:/favicon.png" | absolute_url }}" type="image/png"> -->
     <link rel="icon" href="{{ "/assets/favicon-16.ico" | absolute_url }}" sizes="16x16" type="x-icon">
     <link rel="icon" href="{{ "/assets/favicon-32.ico" | absolute_url }}" sizes="32x32" type="x-icon">
     <link rel="icon" href="{{ "/assets/favicon-48.ico" | absolute_url }}" sizes="48x48" type="x-icon">
     <link rel="icon" href="{{ "/assets/favicon-62.ico" | absolute_url }}" sizes="62x62" type="x-icon">
+
+    <script>
+        (function() {
+            var isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
+            var theme = localStorage.getItem('theme');
+            if (!isHomePage && (theme === 'dark' || (theme !== 'light' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches))) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
 </head>

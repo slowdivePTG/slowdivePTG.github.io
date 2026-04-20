@@ -163,8 +163,8 @@
             display: inline-block;
             height: 100%;
             width: auto;
-            border: 3px solid rgba($color-white, 0.5);
-            box-shadow: 0 3px 5px rgba($color-black, 0.3);
+            border: 3px solid var(--color-hr);
+            box-shadow: 0 3px 5px var(--color-kbd-shadow);
             margin: 0 10px;
             box-sizing: border-box;
             cursor: pointer;
@@ -190,9 +190,9 @@
             bottom: 0;
             padding: 20px 5px 5px;
             top: auto;
-            color: $color-white;
+            color: var(--color-white);
             text-align: center;
-            background: linear-gradient(to top, rgba($color-black,0.8) 0%, rgba($color-black,0) 100%);
+            background: linear-gradient(to top, var(--color-text-normal) 0%, transparent 100%);
 
             &:before {
                 display: none;
@@ -237,10 +237,10 @@
         border-bottom-right-radius: 2px;
         border-top-right-radius: 2px;
         box-sizing: border-box;
-        border-left: 4px solid $orangered;
+        border-left: 4px solid var(--orangered);
 
         &:before {
-            background-color: $orangered;
+            background-color: var(--orangered);
             position: absolute;
             top: 14px;
             left: -12px;
@@ -275,14 +275,14 @@
     padding: 7px 22px;
     font: 600 14px 'Open Sans', Serif;
     border-radius: 4px;
-    border: 2px solid $color-text-link;
-		background: #fff;
-		color: $color-text-link;
+    border: 2px solid var(--color-text-link);
+		background: var(--color-bg);
+		color: var(--color-text-link);
 
     &:hover {
         text-decoration: none;
-        color: $color-text-link-hover;
-        border-color: $color-text-link-hover;
+        color: var(--color-text-link-hover);
+        border-color: var(--color-text-link-hover);
     }
   }
 

@@ -15,19 +15,19 @@ body {
     letter-spacing: 0.01rem;
     font-size: $size-font-normal;
     line-height: 1.75em;
-    color: $color-text-normal;
+    color: var(--color-text-normal);
     font-feature-settings: 'kern' 1;
     text-rendering: geometricPrecision;
     text-align: center;
-    background-color: #f5f7fa; // Elegant light gray background
+    background-color: var(--color-bg); // Elegant light gray background
 }
 
 ::-moz-selection {
-    background: $color-selection;
+    background: var(--color-selection);
 }
 
 ::selection {
-    background: $color-selection;
+    background: var(--color-selection);
 }
 
 h1,
@@ -37,7 +37,7 @@ h4,
 h5,
 h6 {
     font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: $color-text-header;
+    color: var(--color-text-header);
     line-height: 1.15em;
     margin: 0 0 0.7em 0;
     font-family: 'Open Sans', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
@@ -73,38 +73,14 @@ h6 {
 
 a {
     text-decoration: none;
-    color: $color-text-link;
+    color: var(--color-text-link);
     transition: color 0.3s ease;
     position: relative;
 
     &:hover {
-        color: $color-text-link-hover;
+        color: var(--color-text-link-hover);
     }
     
-    // Special hover effect for links in content
-    &:not(.page-link):not(.icon-mail):not(.icon-github):not(.title-link) {
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #4E2A84, #8E44AD);
-            transition: width 0.3s ease;
-        }
-        
-        &:hover::after {
-            width: 100%;
-        }
-    }
-    
-    // Remove underline effect from links containing badge images
-    &:has(img.badge) {
-        &::after {
-            display: none !important;
-        }
-    }
 }
 
 // Reusable badge styling for shields.io badges
@@ -156,7 +132,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: $color-hr 1px solid;
+    border-top: var(--color-hr) 1px solid;
     margin: 3.2em auto;
     padding: 0;
 }
@@ -165,7 +141,7 @@ blockquote {
     box-sizing: border-box;
     margin: 1.75em 0 1.75em -2.2em;
     padding: 0 0 0 1.75em;
-    border-left: $light-green 0.4em solid;
+    border-left: var(--light-green) 0.4em solid;
 }
 
 blockquote blockquote {
@@ -198,21 +174,21 @@ blockquote cite a {
 }
 
 mark {
-    background-color: $color-mark;
+    background-color: var(--color-mark);
 }
 
 kbd {
     display: inline-block;
     margin-bottom: 0.4em;
     padding: 1px 8px;
-    border: $color-kbd-bd 1px solid;
-    color: $color-kbd-color;
-    text-shadow: $color-white 0 1px 0;
+    border: var(--color-kbd-bd) 1px solid;
+    color: var(--color-kbd-color);
+    text-shadow: var(--color-white) 0 1px 0;
     font-size: 0.9em;
     font-weight: 700;
-    background: $color-kbd-bg;
+    background: var(--color-kbd-bg);
     border-radius: 4px;
-    box-shadow: 0 1px 0 rgba($color-black, 0.2), 0 1px 0 0 $color-white inset;
+    box-shadow: 0 1px 0 var(--color-kbd-shadow), 0 1px 0 0 var(--color-white) inset;
 }
 
 table {
@@ -227,11 +203,11 @@ table td {
     line-height: 20px;
     text-align: left;
     vertical-align: top;
-    border-top: $color-table-bd 1px solid;
+    border-top: var(--color-table-bd) 1px solid;
 }
 
 table th {
-    color: $color-black;
+    color: var(--color-black);
 }
 
 table caption + thead tr:first-child th,
@@ -244,16 +220,16 @@ table thead:first-child tr:first-child td {
 }
 
 table tbody + tbody {
-    border-top: $color-table-bd 2px solid;
+    border-top: var(--color-table-bd) 2px solid;
 }
 
 table table table {
-    background-color: $color-white;
+    background-color: var(--color-white);
 }
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
-    background-color: $color-table-head-bg;
+    background-color: var(--color-table-head-bg);
 }
 
 table.plain tbody > tr:nth-child(odd) > td,

@@ -189,4 +189,4 @@ orcid-ID.png
 # *.bst (commented out - might be needed for bibliography)
 
 # My own visitor mapper
-visitor_map/
+*_map/

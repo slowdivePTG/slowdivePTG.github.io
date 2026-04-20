@@ -1,16 +1,4 @@
-{% if page.cover %}
-{% assign cover = page.cover %}
-{% elsif site.cover %}
-{% assign cover = site.cover %}
-{% endif %}
-
-{% if cover %}
-<div class="author-cover image-bg" style="background-image: url('{{ cover | absolute_url }}')"></div>
-{% endif %}
-
-<header class="main-header detail-page {% if cover %} has-cover {% else %} no-cover {% endif %}">
-    <h1 class="page-title"><a class="title-link" href="{{ "/" | absolute_url }}" title="{{ site.title }}">{{ site.title }}</a></h1>
-    <h2 class="page-description">{{ site.subtitle }}</h2>
+<header class="main-header detail-page minimal-header">
     <div class="nav">
 
             {% assign pages = site.pages | sort:"weight"  %}
@@ -25,7 +13,7 @@
                 {% if title == "Gallery" %}
                     <a class="page-link" href="https://ptgcliu.myportfolio.com" title="{{ title }}" target="_blank" rel="noopener">{{ title }}</a>
                 {% else %}
-                    <a class="page-link" href="{{ my_page.url | absolute_url }}" title="{{ title }}">{{ title }}</a>
+                    <a class="page-link" href="{{ my_page.url | relative_url }}" title="{{ title }}">{{ title }}</a>
                 {% endif %}
             {% endif %}
             {% endfor %}

@@ -4,7 +4,6 @@ permalink: "/talk"
 weight:    3
 menutitle: Talks
 title:     Talks and Posters
-cover:     'assets/page/cover_gemini.png'
 ---
 
 <h2 data-icon="icon-office">Unveiling the Progenitor Demographics of Type Ia Supernovae</h2>

@@ -1,14 +1,31 @@
 ---
 layout: default
 ---
-<a href="{{ "/" | absolute_url }}" class="logo-readium"><span class="logo">{% if site.data.authors[0] %}{{ site.data.authors[0].initial | slice: 0, 2 | downcase }}{% else %}cl{% endif %}</span></a>
+<a href="{{ "/" | relative_url }}" class="logo-readium"><span class="logo">{% if site.data.authors[0] %}{{ site.data.authors[0].initial | slice: 0, 2 | downcase }}{% else %}cl{% endif %}</span></a>
 
 <main class="content" role="main">
     <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
-        <header class="post-header short-diver">
-            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>           
+        <header class="post-header" style="width: 80%; max-width: 800px; margin: 0 auto; padding: 80px 0 40px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <h1 class="post-title" itemprop="name headline" style="margin: 0; width: auto; max-width: none;">{{ page.title }}</h1>           
+            <div class="nav header-nav-bars" style="margin: 0; display: flex; justify-content: flex-end; align-items: center; max-width: none; padding: 5px 0;">
+                {% assign pages = site.pages | sort:"weight"  %}
+                {% for my_page in pages %}
+                    {% if my_page.menutitle %}
+                        {% assign title = my_page.menutitle %}
+                    {% elsif site.title %}
+                        {% assign title = my_page.title %}
+                    {% endif %}
+                    {% if title and my_page.visible != false %}
+                        {% if title == "Gallery" %}
+                            <a class="page-link" href="https://ptgcliu.myportfolio.com" title="{{ title }}" target="_blank" rel="noopener" style="margin: 0 0 0 15px;">{{ title }}</a>
+                        {% else %}
+                            <a class="page-link" href="{{ my_page.url | relative_url }}" title="{{ title }}" style="margin: 0 0 0 15px;">{{ title }}</a>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
         </header>
-        <section class="post-content short-diver" itemprop="articleBody">
+        <section class="post-content " itemprop="articleBody">
             {{content}}
         </section>
     </article>

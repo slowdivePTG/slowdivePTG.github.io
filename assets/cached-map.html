@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cached Visitor Map</title>
+    <style>
+        body { margin: 0; padding: 0; background-color: transparent; overflow: hidden; }
+        #globeViz { width: 100vw; height: 100vh; position: relative; z-index: 2; }
+    </style>
+</head>
+<body>
+    <div id="globeViz"></div>
+    
+    <!-- Load Globe.gl fast, without blocking initial paint -->
+    <script src="https://unpkg.com/globe.gl@2.32.2/dist/globe.gl.min.js"></script>
+    
+    <script>
+        const themes = {
+            dark: { // Catppuccin Mocha
+                ocean: "#1e1e2e", atmosphere: "#585b70", land: "#585b70"
+            },
+            light: { // Catppuccin Latte
+                ocean: "#eff1f5", atmosphere: "#ccd0da", land: "#ccd0da"
+            }
+        };
+
+        const myGlobe = Globe()
+            (document.getElementById('globeViz'))
+            .backgroundColor('rgba(0,0,0,0)')
+            .showGlobe(true)
+            .showAtmosphere(true)
+            .atmosphereAltitude(0.10);
+
+        let currentTheme = 'dark'; // default
+
+        function setTheme(mode) {
+            const t = themes[mode] || themes.dark;
+            currentTheme = mode;
+            
+            myGlobe.atmosphereColor(t.atmosphere);
+            
+            const gMat = myGlobe.globeMaterial();
+            if (gMat) {
+                gMat.color.set('#000000');
+                gMat.emissive.set(t.ocean);
+                gMat.emissiveIntensity = 1.0;
+            }
+            
+            myGlobe.polygonCapColor(() => t.land)
+                   .polygonSideColor(() => t.land)
+                   .polygonStrokeColor(() => t.land);
+        }
+
+        // Apply theme based on URL or system pref
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialTheme = urlParams.get('theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        
+        setTheme(initialTheme);
+
+        fetch('https://unpkg.com/globe.gl/example/datasets/ne_110m_admin_0_countries.geojson')
+            .then(res => res.json())
+            .then(countries => {
+                myGlobe
+                    .polygonsData(countries.features)
+                    .polygonCapColor(() => themes[currentTheme].land)
+                    .polygonSideColor(() => themes[currentTheme].land)
+                    .polygonStrokeColor(() => themes[currentTheme].land)
+                    .polygonAltitude(0.005);
+            })
+            .catch(err => console.error("Error loading landmass data:", err));
+
+        myGlobe.controls().autoRotate = true;
+        myGlobe.controls().autoRotateSpeed = 1.5;
+        myGlobe.controls().enableZoom = true;
+
+        // Listen for theme changes from parent
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.theme) {
+                setTheme(event.data.theme);
+            }
+        });
+    </script>
+</body>
+</html>

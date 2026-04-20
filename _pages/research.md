@@ -6,6 +6,7 @@ menutitle: Research
 title:     Research
 ---
 
+
 <h1>Tidal Disruption Events</h1>
 
 <h2 data-icon="icon-library">Repeating Partial TDEs: Evolution over Multiple Outbursts</h2>
@@ -85,3 +86,14 @@ A Bayesian framework for fitting blended spectral features in SN spectra (powere
 - J. RastineJad et al., [2025, ApJL, 988, L13](https://iopscience.iop.org/article/10.3847/2041-8213/ade7f9)
 - **C. Liu**, A. A. Miller, S. J. Boos, et al., [2023, ApJ, 958, 178.](https://iopscience.iop.org/article/10.3847/1538-4357/acffc9)
 - **C. Liu**, A. A. Miller, A. Polin, et al., [2023, ApJ, 946, 83.](https://iopscience.iop.org/article/10.3847/1538-4357/acbb5e/meta)
+
+
+<h1></h1>
+<div class="citation-maps-container" style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 0 auto 1rem auto; justify-content: center; width: 80%; max-width: 800px;">
+  <div style="flex: 1; min-width: 300px; width: 100%;">
+    {% include citation_globe.html map_id="collaborators" title="Collaborator Network" data_path="/assets/data/collaborators_land_matrix.json" %}
+  </div>
+  <div style="flex: 1; min-width: 300px; width: 100%;">
+    {% include citation_globe.html map_id="citations" title="Citation Point Cloud" data_path="/assets/data/citing_land_matrix.json" %}
+  </div>
+</div>

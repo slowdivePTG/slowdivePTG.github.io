@@ -1,0 +1,303 @@
+<div class="globe-container">
+    <div
+        id="globeViz-{{ include.map_id }}"
+        class="globe-viz"
+        style="width: 100%; height: 400px; cursor: grab; position: relative"
+    ></div>
+    <p class="globe-title">{{ include.title }}</p>
+    {% if include.description %}
+    <p class="globe-description">{{ include.description }}</p>
+    {% endif %}
+</div>
+
+<script type="module">
+    import Globe from "https://esm.sh/globe.gl";
+
+    const mapId = "{{ include.map_id }}";
+    const dataPath = "{{ include.data_path | relative_url }}";
+
+    // --- Helper Functions for RGB Gradients ---
+    const hexToRgb = (hex) => {
+        const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result
+            ? [
+                  parseInt(result[1], 16) / 255,
+                  parseInt(result[2], 16) / 255,
+                  parseInt(result[3], 16) / 255,
+              ]
+            : [1, 1, 1];
+    };
+
+    const rgbToHex = (r, g, b) => {
+        const toHex = (c) =>
+            Math.round(c * 255)
+                .toString(16)
+                .padStart(2, "0");
+        return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+    };
+
+    const interpolateColor = (c1, c2, factor) => {
+        return [
+            c1[0] + (c2[0] - c1[0]) * factor,
+            c1[1] + (c2[1] - c1[1]) * factor,
+            c1[2] + (c2[2] - c1[2]) * factor,
+        ];
+    };
+
+    // Theme Configurations (Catppuccin)
+    const themes = {
+        mocha: {
+            bg: "rgba(30, 30, 46, 0)", // Transparent bg to let site CSS show through
+            ocean: "#1e1e2e", // Match the dark mode page background
+            atmosphere: "#585b70", // Surface2 for even shallower contrast
+            emptyLand: "#585b70", // Surface2 for even shallower contrast
+            hover: "#cba6f7",
+            stop1: [0.4, 0.32, 0.55], // Deep Mauve
+            stop2: [0.8, 0.65, 0.97], // True Mauve
+            stop3: [0.96, 0.88, 0.86], // Rosewater
+            tooltipBg: "#6c7086",
+            tooltipColor: "#11111b",
+        },
+        latte: {
+            bg: "rgba(230, 233, 239, 0)", // Transparent bg
+            ocean: "#eff1f5", // Base
+            atmosphere: "#ccd0da", // Surface0
+            emptyLand: "#ccd0da", // Surface0
+            hover: "#8839ef",
+            stop1: [0.88, 0.65, 0.6], // Muted Rosewater
+            stop2: [0.65, 0.45, 0.85], // Soft Mauve
+            stop3: [0.35, 0.25, 0.55], // Deep Muted Mauve
+            tooltipBg: "#9ca0b0",
+            tooltipColor: "#e6e9ef",
+        },
+    };
+
+    const checkIsDark = () => {
+        return (
+            document.documentElement.getAttribute("data-theme") === "dark" ||
+            (window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        );
+    };
+
+    let isDark = checkIsDark();
+    let currentTheme = isDark ? themes.mocha : themes.latte;
+
+    let world;
+    let hoverD = null;
+    let pointMatrix = [];
+    let maxCitations = 1;
+    let minCitations = 1;
+
+    fetch(dataPath)
+        .then((res) => res.json())
+        .then((data) => {
+            pointMatrix = data;
+
+            const citationCounts = pointMatrix
+                .map((d) => d.count)
+                .filter((c) => c > 0);
+            if (citationCounts.length > 0) {
+                maxCitations = Math.max(...citationCounts);
+                minCitations = Math.min(...citationCounts);
+            }
+
+            initGlobe();
+            console.log(
+                `Globe ${mapId} initialized with ${citationCounts.length} active points. maxCitations=${maxCitations}`,
+            );
+        })
+        .catch((err) => {
+            console.error(`Error loading globe data for ${mapId}:`, err);
+        });
+
+    const getColor = (weight) => {
+        if (weight === 0) return currentTheme.emptyLand;
+
+        if (maxCitations <= 1) {
+            return rgbToHex(
+                currentTheme.stop1[0],
+                currentTheme.stop1[1],
+                currentTheme.stop1[2],
+            );
+        }
+
+        const factor = Math.log(weight) / Math.log(maxCitations);
+
+        let rgb;
+        if (factor < 0.5) {
+            rgb = interpolateColor(
+                currentTheme.stop1,
+                currentTheme.stop2,
+                factor * 2,
+            );
+        } else {
+            rgb = interpolateColor(
+                currentTheme.stop2,
+                currentTheme.stop3,
+                (factor - 0.5) * 2,
+            );
+        }
+        return rgbToHex(rgb[0], rgb[1], rgb[2]);
+    };
+
+    const getRadius = (weight) => {
+        const emptyRadius = 0.35;
+        const minActiveRadius = 0.5;
+        const maxActiveRadius = 1.3;
+
+        if (weight === 0) return emptyRadius;
+        if (maxCitations <= 1) return minActiveRadius;
+
+        const ratio = Math.log(weight) / Math.log(maxCitations);
+        return minActiveRadius + (maxActiveRadius - minActiveRadius) * ratio;
+    };
+
+    const initGlobe = () => {
+        const container = document.getElementById(`globeViz-${mapId}`);
+        if (!container) return;
+
+        // Calculate responsive width
+        const initialWidth = container.clientWidth || 300;
+
+        world = Globe()(container)
+            .width(initialWidth)
+            .height(400)
+            .showGlobe(true)
+            .showAtmosphere(true)
+            .backgroundColor(currentTheme.bg)
+            .atmosphereColor(currentTheme.atmosphere)
+            .atmosphereAltitude(0.15)
+            .pointsData(pointMatrix)
+            .pointLat("lat")
+            .pointLng("lon")
+            .pointRadius((d) => getRadius(d.count))
+            .pointAltitude(0.005)
+            .pointColor((d) =>
+                d.count === 0 ? currentTheme.emptyLand : getColor(d.count),
+            )
+            .pointResolution(6);
+
+        setTimeout(() => {
+            const globeMat = world.globeMaterial();
+            if (globeMat) {
+                globeMat.color.set("#000000");
+                globeMat.emissive.set(currentTheme.ocean);
+                globeMat.emissiveIntensity = 1.0;
+                globeMat.roughness = 1.0;
+                globeMat.metalness = 0.0;
+            }
+        }, 100);
+
+        world.controls().autoRotate = true;
+        world.controls().autoRotateSpeed = 1.0;
+        // Disable zoom so it doesn't mess with page scroll
+        world.controls().enableZoom = false;
+
+        updateGlobeStyling();
+
+        world
+            .pointLabel((d) =>
+                d.count > 0
+                    ? `
+              <div style="background: ${currentTheme.tooltipBg}; color: ${currentTheme.tooltipColor}; padding: 6px 10px; border-radius: 6px; font-weight: 500; font-size: 13px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); line-height: 1.2;">
+                  <b>${d.count} ${mapId === "collaborators" ? "collaborators" : "citations"}</b><br/>
+                  in this region
+              </div>
+          `
+                    : null,
+            )
+            .onPointHover((d) => {
+                hoverD = d;
+                world.pointColor(world.pointColor());
+            });
+
+        // Handle resize with ResizeObserver for robustness
+        const resizeObserver = new ResizeObserver((entries) => {
+            for (let entry of entries) {
+                if (world && entry.contentRect.width > 0) {
+                    world.width(entry.contentRect.width);
+                }
+            }
+        });
+        resizeObserver.observe(container);
+    };
+
+    const updateGlobeStyling = () => {
+        if (!world) return;
+
+        world
+            .backgroundColor(currentTheme.bg)
+            .atmosphereColor(currentTheme.atmosphere)
+            .pointColor((d) => {
+                if (d === hoverD && d.count > 0) return currentTheme.hover;
+                return getColor(d.count);
+            });
+
+        const globeMat = world.globeMaterial();
+        if (globeMat) {
+            globeMat.color.set("#000000");
+            globeMat.emissive.set(currentTheme.ocean);
+        }
+        world.pointLabel(world.pointLabel());
+    };
+
+    // Watch for theme changes in the root html element
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.attributeName === "data-theme") {
+                const newIsDark = checkIsDark();
+                if (newIsDark !== isDark) {
+                    isDark = newIsDark;
+                    currentTheme = isDark ? themes.mocha : themes.latte;
+                    updateGlobeStyling();
+                }
+            }
+        });
+    });
+    observer.observe(document.documentElement, { attributes: true });
+
+    // Watch media query
+    window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+            if (!document.documentElement.hasAttribute("data-theme")) {
+                isDark = e.matches;
+                currentTheme = isDark ? themes.mocha : themes.latte;
+                updateGlobeStyling();
+            }
+        });
+</script>
+
+<style>
+    .globe-container {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .globe-title {
+        margin-bottom: 0.2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--color-text-main, inherit);
+    }
+    .globe-description {
+        font-size: 0.95rem;
+        font-weight: 400;
+        text-align: center;
+        opacity: 0.7;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        max-width: 90%;
+    }
+    .globe-viz:active {
+        cursor: grabbing !important;
+    }
+    .scene-tooltip {
+        background: transparent !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+    }
+</style>

@@ -73,10 +73,11 @@
     };
 
     const checkIsDark = () => {
+        const dataTheme = document.documentElement.getAttribute("data-theme");
+        if (dataTheme) return dataTheme === "dark";
         return (
-            document.documentElement.getAttribute("data-theme") === "dark" ||
-            (window.matchMedia &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches)
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
         );
     };
 
@@ -239,6 +240,12 @@
             globeMat.color.set("#000000");
             globeMat.emissive.set(currentTheme.ocean);
         }
+        
+        // Ensure polygon colors (land) are updated
+        world.polygonCapColor(() => currentTheme.land)
+             .polygonSideColor(() => currentTheme.land)
+             .polygonStrokeColor(() => currentTheme.land);
+
         world.pointLabel(world.pointLabel());
     };
 
@@ -247,11 +254,9 @@
         mutations.forEach((mutation) => {
             if (mutation.attributeName === "data-theme") {
                 const newIsDark = checkIsDark();
-                if (newIsDark !== isDark) {
-                    isDark = newIsDark;
-                    currentTheme = isDark ? themes.mocha : themes.latte;
-                    updateGlobeStyling();
-                }
+                isDark = newIsDark;
+                currentTheme = isDark ? themes.mocha : themes.latte;
+                updateGlobeStyling();
             }
         });
     });

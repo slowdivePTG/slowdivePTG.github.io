@@ -225,5 +225,9 @@
                     setTimeout(bootLiveMap, 5000);
                 });
         }
+
+        // Wait a tiny bit (0.1s) to let the page settle before fetching,
+        // this guarantees the static globe only appears if the backend is genuinely asleep or dead.
+        setTimeout(bootLiveMap, 100);
     });
 </script>

@@ -22,4 +22,14 @@ layout: compress
 {% include photoswipe.html %}
 {% include post_scripts.html %}
 <script type="text/javascript" src="{{ "/js/global.js" | absolute_url }}"></script>
+{% if page.url == "/" %}
+<script>
+    // Silent ping to track visitor on the root page without displaying the map
+    fetch("https://visitor-mapper.onrender.com/api/track", {
+        method: "GET",
+        mode: "cors",
+        cache: "no-store"
+    }).catch(e => console.error("Visitor tracking failed:", e));
+</script>
+{% endif %}
 </html>

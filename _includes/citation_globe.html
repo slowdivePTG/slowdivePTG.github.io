@@ -15,6 +15,7 @@
 
     const mapId = "{{ include.map_id }}";
     const dataPath = "{{ include.data_path | relative_url }}";
+    const stylePath = "{{ '/citation_map/globe_style.json' | relative_url }}";
 
     // --- Helper Functions for RGB Gradients ---
     const hexToRgb = (hex) => {
@@ -87,13 +88,17 @@
     let world;
     let hoverD = null;
     let pointMatrix = [];
+    let styleConfig;
     let maxCitations = 1;
     let minCitations = 1;
 
-    fetch(dataPath)
-        .then((res) => res.json())
-        .then((data) => {
+    Promise.all([
+        fetch(dataPath).then((r) => r.json()),
+        fetch(stylePath).then((r) => r.json()),
+    ])
+        .then(([data, style]) => {
             pointMatrix = data;
+            styleConfig = style;
 
             const citationCounts = pointMatrix
                 .map((d) => d.count)
@@ -143,15 +148,11 @@
     };
 
     const getRadius = (weight) => {
-        const emptyRadius = 0.35;
-        const minActiveRadius = 0.5;
-        const maxActiveRadius = 1.3;
-
-        if (weight === 0) return emptyRadius;
-        if (maxCitations <= 1) return minActiveRadius;
-
+        const r = styleConfig.pointRadius;
+        if (weight === 0) return r.empty;
+        if (maxCitations <= 1) return r.min;
         const ratio = Math.log(weight) / Math.log(maxCitations);
-        return minActiveRadius + (maxActiveRadius - minActiveRadius) * ratio;
+        return r.min + (r.max - r.min) * ratio;
     };
 
     const initGlobe = () => {
@@ -168,16 +169,16 @@
             .showAtmosphere(true)
             .backgroundColor(currentTheme.bg)
             .atmosphereColor(currentTheme.atmosphere)
-            .atmosphereAltitude(0.15)
+            .atmosphereAltitude(styleConfig.atmosphereAltitude)
             .pointsData(pointMatrix)
             .pointLat("lat")
             .pointLng("lon")
             .pointRadius((d) => getRadius(d.count))
-            .pointAltitude(0.005)
+            .pointAltitude(styleConfig.pointAltitude)
             .pointColor((d) =>
                 d.count === 0 ? currentTheme.emptyLand : getColor(d.count),
             )
-            .pointResolution(6);
+            .pointResolution(styleConfig.pointResolution);
 
         setTimeout(() => {
             const globeMat = world.globeMaterial();
@@ -191,7 +192,7 @@
         }, 100);
 
         world.controls().autoRotate = true;
-        world.controls().autoRotateSpeed = 1.0;
+        world.controls().autoRotateSpeed = styleConfig.autoRotateSpeed;
         // Disable zoom so it doesn't mess with page scroll
         world.controls().enableZoom = false;
 
@@ -212,6 +213,14 @@
                 hoverD = d;
                 world.pointColor(world.pointColor());
             });
+
+        // Pause rotation while mouse is over the globe container
+        container.addEventListener("mouseenter", () => {
+            world.controls().autoRotateSpeed = 0;
+        });
+        container.addEventListener("mouseleave", () => {
+            world.controls().autoRotateSpeed = styleConfig.autoRotateSpeed;
+        });
 
         // Handle resize with ResizeObserver for robustness
         const resizeObserver = new ResizeObserver((entries) => {
@@ -300,9 +309,10 @@
     .globe-viz:active {
         cursor: grabbing !important;
     }
-    .scene-tooltip {
+    .float-tooltip-kap {
         background: transparent !important;
         padding: 0 !important;
         box-shadow: none !important;
+        max-width: none !important;
     }
 </style>

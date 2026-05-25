@@ -23,8 +23,7 @@ title:     About Me
     </div>
     <div class="content">
         <p>
-            I use data science to analyze vast datasets from time-domain surveys alongside observations from world-class telescopes, uncovering subtle patterns and correlations that reveal the underlying physics of these events.
-            With a primary focus on transient phenomena, my work spans theory, observation, machine learning, and software development.
+            My work focuses primarily on transient phenomena, bridging the gaps between theory, observation, machine learning, and software development. By analyzing vast datasets from time-domain surveys and world-class telescopes, I use data science to uncover subtle patterns that reveal the underlying physics of transients.
         </p>
     </div>
 </div>

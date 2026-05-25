@@ -186,7 +186,7 @@
         function bootLiveMap() {
             if (isLive) return;
             const controller = new AbortController();
-            const timeoutId = setTimeout(() => controller.abort(), 250);
+            const timeoutId = setTimeout(() => controller.abort(), 500);
             fetch("https://visitor-mapper.onrender.com/api/track", {
                 method: "GET", mode: "cors", cache: "no-store", signal: controller.signal
             })
@@ -212,8 +212,12 @@
                     setTimeout(bootLiveMap, 5000);
                 });
         }
-        iframe.src = `/assets/cached-visitor-map.html?theme=${currentTheme}`;
         bootLiveMap();
+
+        // Debug: local map
+        // Run uvicorn `main:app --reload --host 0.0.0.0 --port 8000` in visitor-mapper repo
+        // and uncomment below to test with local map
+        // iframe.src = `http://127.0.0.1:8000/map?theme=${currentTheme}`;
 
         // Re-send theme after iframe content loads (fix race condition)
         iframe.onload = function () {

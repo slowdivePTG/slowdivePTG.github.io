@@ -22,6 +22,26 @@
         margin: 0 0 2.5rem 0;
     }
 
+    .md-card {
+        padding: 25px 20px 5px 20px;
+        
+        .title h2 {
+            font-size: 2rem;
+            word-wrap: break-word;
+            min-width: 0;
+            white-space: normal;
+        }
+
+        .content {
+            margin-left: 20px; // Reduce indent on mobile
+        }
+
+        dd {
+            margin-left: 0; // Remove the large 200px margin-left from desktop
+            padding-top: 5px;
+        }
+    }
+
     h1, h2, h3,
     h4, h5, h6 {
         margin: 0 0 0.3em 0;

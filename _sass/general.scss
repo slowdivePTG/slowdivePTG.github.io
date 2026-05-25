@@ -1,5 +1,5 @@
-@import './_color';
-@import './_size';
+@use 'color';
+@use 'size' as *;
 
 html {
     height: 100%;

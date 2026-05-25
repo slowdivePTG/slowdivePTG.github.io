@@ -51,10 +51,10 @@ title:     Talks and Posters
 - **ZTF Science Meeting** -- Evanston, IL, US (Oct 2022)
 - **Astro-Coffee** (Princeton University) -- Princeton, NJ, US (Sep 2022)
 
-<h2 data-icon="icon-office">The Chemical Impact of an Active Sgr A*</h2>
+<!-- <h2 data-icon="icon-office">The Chemical Impact of an Active Sgr A*</h2>
 <iframe
     src="//docs.google.com/viewer?url=https://slowdiveptg.github.io/assets/talk/SgrA*_slides.pdf?dl=0&amp;hl=en_US&amp;embedded=true"
     class="gde-frame" style="width:100%; height:400px; border: none;" scrolling="no">
 </iframe>
 
-- **PKU‑DoA Undergraduate Astronomy Symposium** -- Beijing, China (Sep 2020)
+- **PKU‑DoA Undergraduate Astronomy Symposium** -- Beijing, China (Sep 2020) -->

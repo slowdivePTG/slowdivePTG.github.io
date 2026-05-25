@@ -213,6 +213,7 @@
                 });
         }
         iframe.src = `/assets/cached-visitor-map.html?theme=${currentTheme}`;
+        bootLiveMap();
 
         // Re-send theme after iframe content loads (fix race condition)
         iframe.onload = function () {

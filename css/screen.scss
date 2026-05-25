@@ -4,26 +4,26 @@
 # color-profile datalist merged with forked file.
 ---
 
-@use 'normalize';
-@use 'general';
-@use 'utilities';
-@use 'icon-icomoon';
-@use 'main';
-@use 'post';
-@use 'index-page';
-@use 'hero';
-@use 'about-page';
-@use 'prism';
-@use 'author';
-@use 'cv';
-@use 'audio-player';
-@use 'media1080';
-@use 'media780';
-@use 'media500';
-@use 'photoswipe';
-@use 'photoswipe-default-skin';
-@use 'animations';
-@use 'page-404';
-@use 'override';
+@import 'normalize';
+@import 'general';
+@import 'utilities';
+@import 'icon-icomoon';
+@import 'main';
+@import 'post';
+@import 'index-page';
+@import 'hero';
+@import 'about-page';
+@import 'prism';
+@import 'author';
+@import 'cv';
+@import 'audio-player';
+@import 'media1080';
+@import 'media780';
+@import 'media500';
+@import 'photoswipe';
+@import 'photoswipe-default-skin';
+@import 'animations';
+@import 'page-404';
+@import 'override';
 
 @import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield|Merriweather:300italic,700,300,700italic|Open+Sans:400,700');

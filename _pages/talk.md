@@ -12,6 +12,7 @@ title:     Talks and Posters
     class="gde-frame" style="width:100%; height:400px; border: none;" scrolling="no">
 </iframe>
 
+- **MMT Science Symposium** -- Tucson, AZ, US (Apr 2026)
 - **Astronomy Tea Talk** (Caltech) -- Pasadena, CA, US (Sep 2025)
 - **Keck Science Meeting** -- Los Angeles, CA, US (Sep 2025)
 - **One Hundred Years of Supernova Science** -- Saltsjöbaden, Sweden (Aug 2025)

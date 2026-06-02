@@ -1,9 +1,9 @@
 Chang:
   profile: "The PDF version of my CV can be download at <a href='https://slowdiveptg.github.io/cv/resume_cv.pdf' target='_blank'>here</a>."
   education:
-    - time: "09.2021 - "
+    - time: "09.2021 - 06.2026"
       location: "Northwestern University"
-      description: "PhD student"
+      description: "PhD"
     - time: "09.2021 - 06.2023"
       location: "Northwestern University"
       description: "Master of Science"
@@ -11,7 +11,7 @@ Chang:
       location: "Peking University"
       description: "Bachelor of Science (Hon), Astronomy"
   employment:
-    - time: "09.2021 -"
+    - time: "09.2021 - 06.2026"
       location: "Evanston, IL, US"
       company: "Northwestern University"
       position: "PhD Student/Research Assistant"

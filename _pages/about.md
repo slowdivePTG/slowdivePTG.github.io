@@ -12,8 +12,7 @@ title:     About Me
     </div>
     <div class="content">
         <p>
-            I am a PhD candidate in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a> at <b>Northwestern University</b>, under the supervision of Prof. Adam A. Miller. 
-            In Oct 2026, I will join <b>University of Oxford</b> as a Hintze Fellow. 
+            I earned my PhD in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a> at <b>Northwestern University</b>, under the supervision of Prof. Adam A. Miller. Starting in October 2026, I will join the <b>University of Oxford</b> as a Hintze Fellow.    
         </p>
     </div>
 </div>

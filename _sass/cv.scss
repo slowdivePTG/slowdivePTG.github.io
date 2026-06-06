@@ -58,6 +58,16 @@
         }
     }
 
+    dd.education-entry {
+        display: flex;
+        align-items: baseline;
+        gap: 0.4em;
+        padding-top: 0;
+
+        h3 { margin: 0; }
+        p { margin: 0; }
+    }
+
     .title {
         display: flex;
         align-items: baseline;

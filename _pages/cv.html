@@ -16,9 +16,10 @@ title: Curriculum Vitae
     {% for entry in cv.education %}
     <dl>
         <dt class="time">{{entry.time}}</dt>
-        <dd>
-            <h3>{{entry.location}}</h3>
-            <p>{{entry.description}}</p>
+        <dd class="education-entry">
+            <h3>{{entry.description}}</h3>
+            <span class="sep"> | </span>
+            <p>{{entry.location}}</p>
         </dd>
     </dl>
     {% endfor %}

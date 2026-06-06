@@ -22,7 +22,7 @@ title:     About Me
     </div>
     <div class="content">
         <p>
-            My work focuses primarily on transient phenomena, bridging the gaps between theory, observation, machine learning, and software development. By analyzing vast datasets from time-domain surveys and world-class telescopes, I use data science to uncover subtle patterns that reveal the underlying physics of transients.
+            My work focuses primarily on transient phenomena, bridging the gaps between theory, observation, and machine learning. With vast datasets from time-domain surveys and world-class telescopes, I use data science to uncover subtle patterns that reveal the underlying physics of various cosmic explosions.
         </p>
     </div>
 </div>

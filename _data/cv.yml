@@ -6,15 +6,15 @@ Chang:
       description: "PhD"
     - time: "09.2021 - 06.2023"
       location: "Northwestern University"
-      description: "Master of Science"
+      description: "MSc"
     - time: "09.2016 - 06.2020"
       location: "Peking University"
-      description: "Bachelor of Science (Hon), Astronomy"
+      description: "BSc (Hons)"
   employment:
     - time: "09.2021 - 06.2026"
       location: "Evanston, IL, US"
       company: "Northwestern University"
-      position: "PhD Student/Research Assistant"
+      position: "PhD Student"
       responsibilities:
         - "Investigating double-detonation SNe Ia from sub-Chandrasekhar-mass white dwarfs using ZTF data"
         - "Leading the first systematic joint analysis of SNe Ia early light curves and late-time nebular spectra"

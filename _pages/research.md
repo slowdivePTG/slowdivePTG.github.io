@@ -24,7 +24,7 @@ Inspired by the discovery of the periodic nuclear transient ASASSN-14ko, We stud
 <h2 data-icon="icon-library">Repeating Partial TDEs: Implications from the Missing Third Flares</h2>
 <a href="https://arxiv.org/abs/2606.06578"><img src="https://img.shields.io/badge/arXiv-2606.06578-B31B1B.svg" alt="arXiv" class="badge"></a>
 
-TDE 2020vdq and 2022dbl are two repeating partial TDE candidates with only two observed flares. We show that the missing third flare is most likely due to the star being completely disrupted after the second encounter, which provides contraints on the star's structure and the original orbit.
+TDE 2020vdq and 2022dbl are two repeating partial TDE candidates each exhibiting only two observed flares. We show that the missing third flare is most likely due to the star being completely disrupted after the second encounter, providing constraints on the star's internal structure and the original orbital parameters.
 
 
 <h1>Type Ia Supernovae</h1>

@@ -13,13 +13,18 @@ title:     Research
 <a href="https://arxiv.org/abs/2406.01670"><img src="https://img.shields.io/badge/arXiv-2406.01670-B31B1B.svg" alt="arXiv" class="badge"></a>
 <a href="https://doi.org/10.3847/1538-4357/ad9b0b"><img src="https://img.shields.io/badge/DOI-10.3847%2F1538--4357%2Fad9b0b-blue" alt="DOI" class="badge"></a>
 
-Stars grazing SMBHs on bound orbits may survive tidal disruption. Using 3D hydrodynamic simulations, I show that Sun-like stars lose progressively more mass in each encounter and are doomed to complete disruption, producing numerous weak flares followed by exponentially brightening luminous flares.
+Stars grazing SMBHs on bound orbits may survive tidal disruption. Using 3D hydrodynamic simulations, We show that Sun-like stars lose progressively more mass in each encounter and are doomed to complete disruption, producing numerous weak flares followed by exponentially brightening luminous flares.
 
 <h2 data-icon="icon-library">Repeating Partial TDEs: Lessons Learned from ASASSN-14ko</h2>
 <a href="https://arxiv.org/abs/2206.13494"><img src="https://img.shields.io/badge/arXiv-2206.13494-B31B1B.svg" alt="arXiv" class="badge"></a>
 <a href="https://doi.org/10.3847/1538-4357/acafe1"><img src="https://img.shields.io/badge/DOI-10.3847%2F1538--4357%2Facafe1-blue" alt="DOI" class="badge"></a>
 
-Inspired by the discovery of the periodic nuclear transient ASASSN-14ko, I studied the disruption and fallback of stars on eccentric orbits around SMBHs. I show that eccentric TDEs can produce significantly shorter-lived flares than parabolic TDEs, and that the lack of amplitude evolution in ASASSN-14ko favors an evolved star on a grazing orbit.
+Inspired by the discovery of the periodic nuclear transient ASASSN-14ko, We studied the disruption and fallback of stars on eccentric orbits around SMBHs. I show that eccentric TDEs can produce significantly shorter-lived flares than parabolic TDEs, and that the lack of amplitude evolution in ASASSN-14ko favors an evolved star on a grazing orbit.
+
+<h2 data-icon="icon-library">Repeating Partial TDEs: Implications from the Missing Third Flares</h2>
+<a href="https://arxiv.org/abs/2606.06578"><img src="https://img.shields.io/badge/arXiv-2606.06578-B31B1B.svg" alt="arXiv" class="badge"></a>
+
+TDE 2020vdq and 2022dbl are two repeating partial TDE candidates with only two observed flares. We show that the missing third flare is most likely due to the star being completely disrupted after the second encounter, which provides contraints on the star's structure and the original orbit.
 
 
 <h1>Type Ia Supernovae</h1>
@@ -28,7 +33,7 @@ Inspired by the discovery of the periodic nuclear transient ASASSN-14ko, I studi
 <a href="https://arxiv.org/abs/2308.06319"><img src="https://img.shields.io/badge/arXiv-2308.06319-B31B1B.svg" alt="arXiv" class="badge"></a>
 <a href="https://doi.org/10.3847/1538-4357/acffc9"><img src="https://img.shields.io/badge/DOI-10.3847%2F1538--4357%2Facffc9-blue" alt="DOI" class="badge"></a>
 
-SN 2020jgb is a peculiar SN Ia showing dramatic red-blue color evolution on the rise. Its early-time and late-time observables independently point to an asymmetric double detonation of a sub-Chandrasekhar-mass white dwarf, with a viewing angle opposite the ignition point of the shell detonation.
+SN 2022joj is a peculiar SN Ia showing dramatic red-blue color evolution on the rise. Its early-time and late-time observables independently point to an asymmetric double detonation of a sub-Chandrasekhar-mass white dwarf, with a viewing angle opposite the ignition point of the shell detonation.
 
 <h2 data-icon="icon-library">SN 2020jgb: A Peculiar SN Ia Triggered by a Thick-Helium-shell Detonation</h2>
 <a href="https://arxiv.org/abs/2209.04463"><img src="https://img.shields.io/badge/arXiv-2209.04463-B31B1B.svg" alt="arXiv" class="badge"></a>
@@ -75,7 +80,7 @@ A powerful new framework (powered by JAX) for precise host-galaxy subtraction in
 - L. A. Kwok, **C. Liu**, S. W. Jha, et al., [2025, arXiv:2510.09760.](https://arxiv.org/abs/2510.09760)
 - L. A. Kwok, S. Schulze, **C. Liu**, et al., [2025, Transient Name Server AstroNote, 129, 1.](https://ui.adsabs.harvard.edu/abs/2025TNSAN.129....1K/abstract)
 
-<h2 data-icon="icon-briefcase">BayeSpecFit: Fitting Blended Spectral Features in Supernovae</h2>
+<!-- <h2 data-icon="icon-briefcase">BayeSpecFit: Fitting Blended Spectral Features in Supernovae</h2>
 
 <a href="https://github.com/slowdivePTG/BayeSpecFit.git"><img src="https://img.shields.io/badge/GitHub-Repo-blue?logo=github" alt="GitHub" class="badge"></a>
 
@@ -85,7 +90,7 @@ A Bayesian framework for fitting blended spectral features in SN spectra (powere
 - L. A. Kwok, **C. Liu**, S. W. Jha, et al., [2025, arXiv:2510.09760.](https://arxiv.org/abs/2510.09760)
 - J. RastineJad et al., [2025, ApJL, 988, L13](https://iopscience.iop.org/article/10.3847/2041-8213/ade7f9)
 - **C. Liu**, A. A. Miller, S. J. Boos, et al., [2023, ApJ, 958, 178.](https://iopscience.iop.org/article/10.3847/1538-4357/acffc9)
-- **C. Liu**, A. A. Miller, A. Polin, et al., [2023, ApJ, 946, 83.](https://iopscience.iop.org/article/10.3847/1538-4357/acbb5e/meta)
+- **C. Liu**, A. A. Miller, A. Polin, et al., [2023, ApJ, 946, 83.](https://iopscience.iop.org/article/10.3847/1538-4357/acbb5e/meta) -->
 
 
 <h1></h1>

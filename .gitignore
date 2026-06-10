@@ -188,5 +188,8 @@ orcid-ID.png
 # *.cls (commented out - you need awesome-cv.cls)
 # *.bst (commented out - might be needed for bibliography)
 
+# Temp work directory
+temp/
+
 # My own visitor mapper
 *_map/

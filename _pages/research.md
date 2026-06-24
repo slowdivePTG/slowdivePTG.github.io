@@ -29,6 +29,10 @@ TDE 2020vdq and 2022dbl are two repeating partial TDE candidates each exhibiting
 
 <h1>Type Ia Supernovae</h1>
 
+<h2 data-icon="icon-library">Decoding the Early-Time Light Curves of Type Ia Supernovae</h2>
+
+Using a hierarchical Bayesian model, we analyze the largest sample of early-time SN Ia light curves from ZTF DR2. Despite heterogeneous data quality and observing cadences, we statistically characterize their rise behavior and identify a bifurcation in the correlation between early-time light-curve shape and the full light-curve stretch, suggesting multiple SN Ia populations with distinct early-time properties.
+
 <h2 data-icon="icon-library">SN 2022joj: A Peculiar SN Ia from an Asymmetric Helium-shell Double Detonation</h2>
 <a href="https://arxiv.org/abs/2308.06319"><img src="https://img.shields.io/badge/arXiv-2308.06319-B31B1B.svg" alt="arXiv" class="badge"></a>
 <a href="https://doi.org/10.3847/1538-4357/acffc9"><img src="https://img.shields.io/badge/DOI-10.3847%2F1538--4357%2Facffc9-blue" alt="DOI" class="badge"></a>

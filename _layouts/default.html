@@ -25,7 +25,14 @@ layout: compress
 {% if page.url == "/" %}
 <script>
     // Silent ping to track visitor on the root page without displaying the map
-    fetch("https://visitor-mapper.onrender.com/api/track", {
+    var params = new URLSearchParams();
+    if (navigator.webdriver) params.set("wd", "1");
+    params.set("sw", screen.width);
+    params.set("sh", screen.height);
+    params.set("lang", navigator.language);
+    params.set("path", window.location.pathname);
+    if (document.referrer) params.set("ref", document.referrer);
+    fetch("https://visitor-mapper.onrender.com/api/track?" + params, {
         method: "GET",
         mode: "cors",
         cache: "no-store"

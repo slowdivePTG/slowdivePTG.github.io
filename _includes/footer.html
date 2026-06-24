@@ -130,7 +130,14 @@
             if (isLive) return;
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), 500);
-            fetch("https://visitor-mapper.onrender.com/api/track", {
+            var params = new URLSearchParams();
+            if (navigator.webdriver) params.set("wd", "1");
+            params.set("sw", screen.width);
+            params.set("sh", screen.height);
+            params.set("lang", navigator.language);
+            params.set("path", window.location.pathname);
+            if (document.referrer) params.set("ref", document.referrer);
+            fetch("https://visitor-mapper.onrender.com/api/track?" + params, {
                 method: "GET", mode: "cors", cache: "no-store", signal: controller.signal
             })
                 .then((response) => {

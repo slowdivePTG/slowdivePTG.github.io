@@ -78,26 +78,10 @@ A supervised machine learning approach using XGBoost to separate point sources f
 <h2 data-icon="icon-briefcase">HostSub_GP: Galaxy Background Removal in Transient Spectroscopy</h2>
 
 <a href="https://arxiv.org/abs/2508.15278"><img src="https://img.shields.io/badge/arXiv-2508.15278-B31B1B.svg" alt="arXiv" class="badge"></a>
+<a href="https://doi.org/10.1088/1538-3873/ae3cc1"><img src="https://img.shields.io/badge/DOI-10.1088%2F1538--3873%2Fae3cc1-blue" alt="DOI" class="badge"></a>
 <a href="https://github.com/slowdivePTG/HostSub_GP.git"><img src="https://img.shields.io/badge/GitHub-HostSub--GP-blue?logo=github" alt="GitHub" class="badge"></a>
 
 A powerful new framework (powered by JAX) for precise host-galaxy subtraction in long-slit transient spectroscopy. It leverages archival imaging and Gaussian-process modeling to build high-fidelity models of galaxy light, enabling robust background removal in complex environments and substantially outperforming traditional techniques.
-
-***Publications***
-- L. A. Kwok, **C. Liu**, S. W. Jha, et al., [2025, arXiv:2510.09760.](https://arxiv.org/abs/2510.09760)
-- L. A. Kwok, S. Schulze, **C. Liu**, et al., [2025, Transient Name Server AstroNote, 129, 1.](https://ui.adsabs.harvard.edu/abs/2025TNSAN.129....1K/abstract)
-
-<!-- <h2 data-icon="icon-briefcase">BayeSpecFit: Fitting Blended Spectral Features in Supernovae</h2>
-
-<a href="https://github.com/slowdivePTG/BayeSpecFit.git"><img src="https://img.shields.io/badge/GitHub-Repo-blue?logo=github" alt="GitHub" class="badge"></a>
-
-A Bayesian framework for fitting blended spectral features in SN spectra (powered by PyMC), using a combination of physical priors and flexible line profiles to robustly decompose complex absorption features and extract accurate velocity and equivalent width measurements.
-
-***Publications***
-- L. A. Kwok, **C. Liu**, S. W. Jha, et al., [2025, arXiv:2510.09760.](https://arxiv.org/abs/2510.09760)
-- J. RastineJad et al., [2025, ApJL, 988, L13](https://iopscience.iop.org/article/10.3847/2041-8213/ade7f9)
-- **C. Liu**, A. A. Miller, S. J. Boos, et al., [2023, ApJ, 958, 178.](https://iopscience.iop.org/article/10.3847/1538-4357/acffc9)
-- **C. Liu**, A. A. Miller, A. Polin, et al., [2023, ApJ, 946, 83.](https://iopscience.iop.org/article/10.3847/1538-4357/acbb5e/meta) -->
-
 
 <h1></h1>
 <div class="citation-maps-container" style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 0 auto 1rem auto; justify-content: center; width: 80%; max-width: 800px;">

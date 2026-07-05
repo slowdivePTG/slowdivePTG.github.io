@@ -21,7 +21,7 @@
         /*
             Image gallery
          */
-        $('.post-content img').each(function () {
+        $('.post-content img').not('.badge').each(function () {
             var src = $(this).attr('src');
             var self = $(this);
             var newImg = new Image();
@@ -31,6 +31,9 @@
             });
             newImg.src = src;
         }).on('click', function () {
+            if ($(this).closest('a').length) {
+                return;
+            }
             if ($(this).parents('.album').length) {
                 return;
             }

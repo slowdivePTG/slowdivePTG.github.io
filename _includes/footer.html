@@ -99,7 +99,19 @@
             );
         }
 
-        const currentTheme = checkIsDark() ? "dark" : "light";
+        function getResolvedTheme() {
+            return checkIsDark() ? "dark" : "light";
+        }
+
+        function sendThemeToMap() {
+            if (iframe.contentWindow) {
+                iframe.contentWindow.postMessage(
+                    { theme: getResolvedTheme() },
+                    "*",
+                );
+            }
+        }
+
         let isLive = false;
         let isCachedLoaded = false; // true after archival map is loaded
 
@@ -110,13 +122,7 @@
                     mutation.type === "attributes" &&
                     mutation.attributeName === "data-theme"
                 ) {
-                    const isDark = checkIsDark();
-                    if (iframe.contentWindow) {
-                        iframe.contentWindow.postMessage(
-                            { theme: isDark ? "dark" : "light" },
-                            "*",
-                        );
-                    }
+                    sendThemeToMap();
                 }
             });
         });
@@ -125,6 +131,20 @@
             attributes: true,
             attributeFilter: ["data-theme"],
         });
+
+        const themeMedia = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+        if (themeMedia) {
+            const handleSystemThemeChange = function () {
+                if (!document.documentElement.hasAttribute("data-theme")) {
+                    sendThemeToMap();
+                }
+            };
+            if (themeMedia.addEventListener) {
+                themeMedia.addEventListener("change", handleSystemThemeChange);
+            } else if (themeMedia.addListener) {
+                themeMedia.addListener(handleSystemThemeChange);
+            }
+        }
 
         function bootLiveMap() {
             if (isLive) return;
@@ -143,8 +163,7 @@
                 .then((response) => {
                     clearTimeout(timeoutId);
                     if (response.ok) {
-                        const currentTheme = checkIsDark() ? "dark" : "light";
-                        iframe.src = `https://visitor-mapper.onrender.com/map?theme=${currentTheme}`;
+                        iframe.src = `https://visitor-mapper.onrender.com/map?theme=${getResolvedTheme()}`;
                         isLive = true;
                         console.log("Live visitor map feed connected.");
                     } else {
@@ -155,8 +174,7 @@
                     clearTimeout(timeoutId);
                     if (!isCachedLoaded) {
                         console.error("Live map feed offline, falling back to archival visitor map.", error);
-                        const currentTheme = checkIsDark() ? "dark" : "light";
-                        iframe.src = `/assets/cached-visitor-map.html?theme=${currentTheme}`;
+                        iframe.src = `/assets/cached-visitor-map.html?theme=${getResolvedTheme()}`;
                         isCachedLoaded = true;
                     }
                     setTimeout(bootLiveMap, 5000);
@@ -167,17 +185,12 @@
         // Debug: local map
         // Run uvicorn `main:app --reload --host 0.0.0.0 --port 8000` in visitor-mapper repo
         // and uncomment below to test with local map
-        // iframe.src = `http://127.0.0.1:8000/map?theme=${currentTheme}`;
+        // iframe.src = `http://127.0.0.1:8000/map?theme=${getResolvedTheme()}`;
 
         // Re-send theme after iframe content loads (fix race condition)
         iframe.onload = function () {
-            console.log("visitor-map iframe loaded, re-sending theme=" + currentTheme);
-            if (iframe.contentWindow) {
-                iframe.contentWindow.postMessage(
-                    { theme: currentTheme },
-                    "*",
-                );
-            }
+            console.log("visitor-map iframe loaded, re-sending theme=" + getResolvedTheme());
+            sendThemeToMap();
         };
     });
 </script>

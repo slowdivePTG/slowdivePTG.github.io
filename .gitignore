@@ -193,3 +193,6 @@ temp/
 
 # My own visitor mapper
 *_map/
+
+# AI/agents
+.codegraph/

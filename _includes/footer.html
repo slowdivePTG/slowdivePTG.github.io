@@ -99,14 +99,14 @@
             );
         }
 
-        function getResolvedTheme() {
+        function getCurrentTheme() {
             return checkIsDark() ? "dark" : "light";
         }
 
         function sendThemeToMap() {
             if (iframe.contentWindow) {
                 iframe.contentWindow.postMessage(
-                    { theme: getResolvedTheme() },
+                    { theme: getCurrentTheme() },
                     "*",
                 );
             }
@@ -132,20 +132,6 @@
             attributeFilter: ["data-theme"],
         });
 
-        const themeMedia = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
-        if (themeMedia) {
-            const handleSystemThemeChange = function () {
-                if (!document.documentElement.hasAttribute("data-theme")) {
-                    sendThemeToMap();
-                }
-            };
-            if (themeMedia.addEventListener) {
-                themeMedia.addEventListener("change", handleSystemThemeChange);
-            } else if (themeMedia.addListener) {
-                themeMedia.addListener(handleSystemThemeChange);
-            }
-        }
-
         function bootLiveMap() {
             if (isLive) return;
             const controller = new AbortController();
@@ -163,7 +149,7 @@
                 .then((response) => {
                     clearTimeout(timeoutId);
                     if (response.ok) {
-                        iframe.src = `https://visitor-mapper.onrender.com/map?theme=${getResolvedTheme()}`;
+                        iframe.src = `https://visitor-mapper.onrender.com/map?theme=${getCurrentTheme()}`;
                         isLive = true;
                         console.log("Live visitor map feed connected.");
                     } else {
@@ -174,7 +160,7 @@
                     clearTimeout(timeoutId);
                     if (!isCachedLoaded) {
                         console.error("Live map feed offline, falling back to archival visitor map.", error);
-                        iframe.src = `/assets/cached-visitor-map.html?theme=${getResolvedTheme()}`;
+                        iframe.src = `/assets/cached-visitor-map.html?theme=${getCurrentTheme()}`;
                         isCachedLoaded = true;
                     }
                     setTimeout(bootLiveMap, 5000);
@@ -185,11 +171,11 @@
         // Debug: local map
         // Run uvicorn `main:app --reload --host 0.0.0.0 --port 8000` in visitor-mapper repo
         // and uncomment below to test with local map
-        // iframe.src = `http://127.0.0.1:8000/map?theme=${getResolvedTheme()}`;
+        // iframe.src = `http://127.0.0.1:8000/map?theme=${getCurrentTheme()}`;
 
         // Re-send theme after iframe content loads (fix race condition)
         iframe.onload = function () {
-            console.log("visitor-map iframe loaded, re-sending theme=" + getResolvedTheme());
+            console.log("visitor-map iframe loaded, re-sending theme=" + getCurrentTheme());
             sendThemeToMap();
         };
     });

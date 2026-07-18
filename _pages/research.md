@@ -47,16 +47,6 @@ SN 2022joj is a peculiar SN Ia showing dramatic red-blue color evolution on the 
 
 SN 2020jgb is a peculiar SN Ia whose unusually red colors, strong blue line blanketing, and prominent helium absorption in the NIR are best explained by a thick helium-shell (~0.1 solar mass) detonation atop a sub-Chandrasekhar-mass white dwarf.
 
-<!-- <h2 data-icon="icon-library">ZTF SN Ia DR2: Hierarchical Bayesian Modeling of SN Ia Rise</h2>
-<img src="https://img.shields.io/badge/Status-Work%20in%20Progress-yellow.svg" alt="Work in Progress" class="badge">
-
-I am developing a hierarchical Bayesian model to analyze the largest sample of early-time SN Ia light curves from ZTF DR2, aiming to statistically characterize their rise behavior despite heterogeneous data quality and observational cadences.
-
-<h2 data-icon="icon-library">From First to Last Photons: ZTF Early + Late SN Ia Sample</h2>
-<img src="https://img.shields.io/badge/Status-Work%20in%20Progress-yellow.svg" alt="Work in Progress" class="badge">
-
-I am running a spectroscopic campaign to obtain late-time spectra for 35 nearby ZTF SNe Ia with high-quality early-time light curves, aiming to connect early-time phenomena with late-time observables to better understand SN Ia explosion physics and progenitor systems. -->
-
 <h1>ML for Transient Astronomy</h1>
 
 <h2 data-icon="icon-briefcase">LS-PSC: Morphological Star-Galaxy Classification for Legacy Surveys</h2>

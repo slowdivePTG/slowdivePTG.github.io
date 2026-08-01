@@ -64,10 +64,10 @@
             ocean: "#eff1f5",
             atmosphere: "#ccd0da",
             emptyLand: "#ccd0da",
-            hover: "#8839ef",
-            stop1: [0.86, 0.66, 0.61], // Muted Rosewater
-            stop2: [0.65, 0.45, 0.85], // Soft Mauve
-            stop3: [0.55, 0.30, 0.85], // Bright Purple
+            hover: "#464057",
+            stop1: [0.64, 0.60, 0.69], // Soft warm-violet ink
+            stop2: [0.46, 0.42, 0.53], // Medium warm-violet ink
+            stop3: [0.34, 0.29, 0.41], // Deep warm-violet ink
             tooltipBg: "#9ca0b0",
             tooltipColor: "#e6e9ef",
         },
@@ -193,8 +193,8 @@
 
         world.controls().autoRotate = true;
         world.controls().autoRotateSpeed = styleConfig.autoRotateSpeed;
-        // Disable zoom so it doesn't mess with page scroll
-        world.controls().enableZoom = false;
+        // Match the visitor map: allow manual zooming into dense regions.
+        world.controls().enableZoom = true;
 
         updateGlobeStyling();
 

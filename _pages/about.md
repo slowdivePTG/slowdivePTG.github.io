@@ -12,7 +12,7 @@ title:     About Me
     </div>
     <div class="content">
         <p>
-            I earned my PhD in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a> at <b>Northwestern University</b>, under the supervision of Prof. Adam A. Miller. Starting in October 2026, I will join the <b>University of Oxford</b> as a Hintze Fellow.    
+            I am a Hintze Fellow at the <b>University of Oxford</b> working on time-domain astronomy. I earned my PhD in the <a href='https://miller-pasta-lab.github.io/'><b>Miller PASTA lab</b></a> at <b>Northwestern University</b>, under the supervision of Prof. Adam A. Miller. 
         </p>
     </div>
 </div>
@@ -22,7 +22,7 @@ title:     About Me
     </div>
     <div class="content">
         <p>
-            My work focuses primarily on transient phenomena, bridging the gaps between theory, observation, and machine learning. With vast datasets from time-domain surveys and world-class telescopes, I use data science to uncover subtle patterns that reveal the underlying physics of various cosmic explosions.
+            My work focuses primarily on transient phenomena, bridging the gaps between theory, observation, and machine learning. With vast datasets from time-domain surveys and world-class telescopes, I use data science to uncover subtle patterns that reveal the underlying physics of various cosmic explosions, including supernovae and tidal disruption events.
         </p>
     </div>
 </div>
